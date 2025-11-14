@@ -1,6 +1,3 @@
-import { classify, releasesAgo } from './utils.js';
-import { resolveCommits, isAncestor } from './api-client.js';
-
 // Resolve releases.json relative to this module so it works at /<repo>/
 // instead of incorrectly resolving to the domain root.
 let releasesData;
