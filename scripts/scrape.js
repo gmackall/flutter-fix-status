@@ -41,9 +41,10 @@ const out = {
   channels
 };
 
-fs.mkdirSync('data', { recursive: true });
-const path = 'data/releases.json';
+// Write inside public so Pages can serve it
+fs.mkdirSync('public/data', { recursive: true });
+const path = 'public/data/releases.json';
 const prior = fs.existsSync(path) ? JSON.parse(fs.readFileSync(path, 'utf8')) : null;
 const changed = JSON.stringify(prior) !== JSON.stringify(out);
 fs.writeFileSync(path, JSON.stringify(out, null, 2));
-console.log(changed ? 'Updated data/releases.json' : 'No changes detected');
+console.log(changed ? 'Updated public/data/releases.json' : 'No changes');
