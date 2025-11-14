@@ -2,7 +2,7 @@ name: Deploy Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -10,19 +10,42 @@ permissions:
   pages: write
   id-token: write
 
+# (Optional) prevent overlapping deployments
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build-deploy:
+    environment:
+      name: github-pages
+      # URL will be populated after deployment (GitHub sets it automatically if omitted).
+      # You can also explicitly set url: ${{ steps.deploy.outputs.page_url }} after deploy step.
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # If you had a build (e.g. bundling), you’d add it here before uploading artifact.
+      # - name: Build
+      #   run: |
+      #     npm ci
+      #     npm run build
+      # Ensure build outputs end up inside public/ if you use build steps.
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
-      - name: Deploy
+
+      - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
-    outputs:
-      page_url: ${{ steps.deploy.outputs.page_url }}
+
+      - name: Show deployed URL
+        run: echo "Deployed to ${{ steps.deploy.outputs.page_url }}"
