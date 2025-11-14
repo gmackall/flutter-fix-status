@@ -1,5 +1,3382 @@
 {
-  "generated_at": "2025-11-14T03:19:21.475Z",
-  "source": "https://docs.flutter.dev/install/archive",
-  "channels": {}
+  "generated_at": "2025-11-14T03:27:54.752Z",
+  "source": "https://storage.googleapis.com/flutter_infra_release/releases/releases_linux.json",
+  "channels": {
+    "stable": [
+      {
+        "version": "v1.0.0",
+        "released": "2018-12-04",
+        "framework_sha": "5391447fae6209bb21a89e6a5a6583cac1af9b4b"
+      },
+      {
+        "version": "v1.2.1",
+        "released": "2019-02-26",
+        "framework_sha": "8661d8aecd626f7f57ccbcb735553edc05a2e713"
+      },
+      {
+        "version": "v1.5.4-hotfix.2",
+        "released": "2019-05-07",
+        "framework_sha": "7a4c33425ddd78c54aba07d86f3f9a4a0051769b"
+      },
+      {
+        "version": "v1.7.8+hotfix.2",
+        "released": "2019-07-08",
+        "framework_sha": "2e540931f73593e35627592ca4f9a4ca3035ed31"
+      },
+      {
+        "version": "v1.7.8+hotfix.3",
+        "released": "2019-07-09",
+        "framework_sha": "b712a172f9694745f50505c93340883493b505e5"
+      },
+      {
+        "version": "v1.7.8+hotfix.4",
+        "released": "2019-07-24",
+        "framework_sha": "20e59316b8b8474554b38493b8ca888794b0234a"
+      },
+      {
+        "version": "v1.9.1+hotfix.2",
+        "released": "2019-09-10",
+        "framework_sha": "2d2a1ffec95cc70a3218872a2cd3f8de4933c42f"
+      },
+      {
+        "version": "v1.9.1+hotfix.4",
+        "released": "2019-10-01",
+        "framework_sha": "cc949a8e8b9cf394b9290a8e80f87af3e207dce5"
+      },
+      {
+        "version": "v1.9.1+hotfix.5",
+        "released": "2019-10-17",
+        "framework_sha": "1aedbb1835bd6eb44550293d57d4d124f19901f0"
+      },
+      {
+        "version": "v1.9.1+hotfix.6",
+        "released": "2019-10-23",
+        "framework_sha": "68587a0916366e9512a78df22c44163d041dd5f3"
+      },
+      {
+        "version": "v1.12.13+hotfix.5",
+        "released": "2019-12-11",
+        "framework_sha": "27321ebbad34b0a3fafe99fac037102196d655ff"
+      },
+      {
+        "version": "v1.12.13+hotfix.7",
+        "released": "2020-01-27",
+        "framework_sha": "9f5ff2306bb3e30b2b98eee79cd231b1336f41f4"
+      },
+      {
+        "version": "v1.12.13+hotfix.8",
+        "released": "2020-02-11",
+        "framework_sha": "0b8abb4724aa590dd0f429683339b1e045a1594d"
+      },
+      {
+        "version": "v1.12.13+hotfix.9",
+        "released": "2020-04-17",
+        "framework_sha": "f139b11009aeb8ed2a3a3aa8b0066e482709dde3"
+      },
+      {
+        "version": "1.17.0",
+        "released": "2020-05-06",
+        "framework_sha": "e6b34c2b5c96bb95325269a29a84e83ed8909b5f"
+      },
+      {
+        "version": "1.17.1",
+        "released": "2020-05-13",
+        "framework_sha": "f7a6a7906be96d2288f5d63a5a54c515a6e987fe"
+      },
+      {
+        "version": "1.17.2",
+        "released": "2020-05-28",
+        "framework_sha": "5f21edf8b66e31a39133177319414395cc5b5f48"
+      },
+      {
+        "version": "1.17.3",
+        "released": "2020-06-04",
+        "framework_sha": "b041144f833e05cf463b8887fa12efdec9493488"
+      },
+      {
+        "version": "1.17.4",
+        "released": "2020-06-18",
+        "framework_sha": "1ad9baa8b99a2897c20f9e6e54d3b9b359ade314"
+      },
+      {
+        "version": "1.17.5",
+        "released": "2020-07-01",
+        "framework_sha": "8af6b2f038c1172e61d418869363a28dffec3cb4"
+      },
+      {
+        "version": "1.20.0",
+        "released": "2020-08-05",
+        "framework_sha": "840c9205b344a59e48a5926ee2d791cc5640924c"
+      },
+      {
+        "version": "1.20.1",
+        "released": "2020-08-06",
+        "framework_sha": "2ae34518b87dd891355ed6c6ea8cb68c4d52bb9d"
+      },
+      {
+        "version": "1.20.2",
+        "released": "2020-08-13",
+        "framework_sha": "bbfbf1770cca2da7c82e887e4e4af910034800b6"
+      },
+      {
+        "version": "1.20.3",
+        "released": "2020-09-02",
+        "framework_sha": "216dee60c0cc9449f0b29bcf922974d612263e24"
+      },
+      {
+        "version": "1.20.4",
+        "released": "2020-09-15",
+        "framework_sha": "fba99f6cf9a14512e461e3122c8ddfaa25394e89"
+      },
+      {
+        "version": "1.22.0",
+        "released": "2020-10-01",
+        "framework_sha": "d408d302e22179d598f467e11da5dd968dbdc9ec"
+      },
+      {
+        "version": "1.22.1",
+        "released": "2020-10-08",
+        "framework_sha": "f30b7f4db93ee747cd727df747941a28ead25ff5"
+      },
+      {
+        "version": "1.22.2",
+        "released": "2020-10-16",
+        "framework_sha": "84f3d28555368a70270e9ac8390a9441df95e752"
+      },
+      {
+        "version": "1.22.3",
+        "released": "2020-10-30",
+        "framework_sha": "8874f21e79d7ec66d0457c7ab338348e31b17f1d"
+      },
+      {
+        "version": "1.22.4",
+        "released": "2020-11-13",
+        "framework_sha": "1aafb3a8b9b0c36241c5f5b34ee914770f015818"
+      },
+      {
+        "version": "1.22.5",
+        "released": "2020-12-10",
+        "framework_sha": "78910062997c3a836feee883712c241a5fd22983"
+      },
+      {
+        "version": "1.22.6",
+        "released": "2021-01-25",
+        "framework_sha": "9b2d32b605630f28625709ebd9d78ab3016b2bf6"
+      },
+      {
+        "version": "2.0.0",
+        "released": "2021-03-03",
+        "framework_sha": "60bd88df915880d23877bfc1602e8ddcf4c4dd2a"
+      },
+      {
+        "version": "2.0.1",
+        "released": "2021-03-04",
+        "framework_sha": "c5a4b4029c0798f37c4a39b479d7cb75daa7b05c"
+      },
+      {
+        "version": "2.0.2",
+        "released": "2021-03-12",
+        "framework_sha": "8962f6dc68ec8e2206ac2fa874da4a453856c7d3"
+      },
+      {
+        "version": "2.0.3",
+        "released": "2021-03-19",
+        "framework_sha": "4d7946a68d26794349189cf21b3f68cc6fe61dcb"
+      },
+      {
+        "version": "2.0.4",
+        "released": "2021-04-02",
+        "framework_sha": "b1395592de68cc8ac4522094ae59956dd21a91db"
+      },
+      {
+        "version": "2.0.5",
+        "released": "2021-04-16",
+        "framework_sha": "adc687823a831bbebe28bdccfac1a628ca621513"
+      },
+      {
+        "version": "2.0.6",
+        "released": "2021-04-30",
+        "framework_sha": "1d9032c7e1d867f071f2277eb1673e8f9b0274e3"
+      },
+      {
+        "version": "2.2.0",
+        "released": "2021-05-18",
+        "framework_sha": "b22742018b3edf16c6cadd7b76d9db5e7f9064b5"
+      },
+      {
+        "version": "2.2.1",
+        "released": "2021-05-27",
+        "framework_sha": "02c026b03cd31dd3f867e5faeb7e104cce174c5f"
+      },
+      {
+        "version": "2.2.2",
+        "released": "2021-06-11",
+        "framework_sha": "d79295af24c3ed621c33713ecda14ad196fd9c31"
+      },
+      {
+        "version": "2.2.3",
+        "released": "2021-07-01",
+        "framework_sha": "f4abaa0735eba4dfd8f33f73363911d63931fe03"
+      },
+      {
+        "version": "2.5.0",
+        "released": "2021-09-08",
+        "framework_sha": "4cc385b4b84ac2f816d939a49ea1f328c4e0b48e"
+      },
+      {
+        "version": "2.5.1",
+        "released": "2021-09-17",
+        "framework_sha": "ffb2ecea5223acdd139a5039be2f9c796962833d"
+      },
+      {
+        "version": "2.5.2",
+        "released": "2021-09-30",
+        "framework_sha": "3595343e20a61ff16d14e8ecc25f364276bb1b8b"
+      },
+      {
+        "version": "2.5.3",
+        "released": "2021-10-15",
+        "framework_sha": "18116933e77adc82f80866c928266a5b4f1ed645"
+      },
+      {
+        "version": "2.8.0",
+        "released": "2021-12-09",
+        "framework_sha": "cf4400006550b70f28e4b4af815151d1e74846c6"
+      },
+      {
+        "version": "2.8.1",
+        "released": "2021-12-16",
+        "framework_sha": "77d935af4db863f6abd0b9c31c7e6df2a13de57b"
+      },
+      {
+        "version": "2.10.0",
+        "released": "2022-02-03",
+        "framework_sha": "5f105a6ca7a5ac7b8bc9b241f4c2d86f4188cf5c"
+      },
+      {
+        "version": "2.10.1",
+        "released": "2022-02-10",
+        "framework_sha": "db747aa1331bd95bc9b3874c842261ca2d302cd5"
+      },
+      {
+        "version": "2.10.2",
+        "released": "2022-02-19",
+        "framework_sha": "097d3313d8e2c7f901932d63e537c1acefb87800"
+      },
+      {
+        "version": "2.10.3",
+        "released": "2022-03-03",
+        "framework_sha": "7e9793dee1b85a243edd0e06cb1658e98b077561"
+      },
+      {
+        "version": "2.10.4",
+        "released": "2022-03-28",
+        "framework_sha": "c860cba910319332564e1e9d470a17074c1f2dfd"
+      },
+      {
+        "version": "2.10.5",
+        "released": "2022-04-18",
+        "framework_sha": "5464c5bac742001448fe4fc0597be939379f88ea"
+      },
+      {
+        "version": "3.0.0",
+        "released": "2022-05-11",
+        "framework_sha": "ee4e09cce01d6f2d7f4baebd247fde02e5008851"
+      },
+      {
+        "version": "3.0.1",
+        "released": "2022-05-20",
+        "framework_sha": "fb57da5f945d02ef4f98dfd9409a72b7cce74268"
+      },
+      {
+        "version": "3.0.2",
+        "released": "2022-06-10",
+        "framework_sha": "cd41fdd495f6944ecd3506c21e94c6567b073278"
+      },
+      {
+        "version": "3.0.3",
+        "released": "2022-06-22",
+        "framework_sha": "676cefaaff197f27424942307668886253e1ec35"
+      },
+      {
+        "version": "3.0.4",
+        "released": "2022-07-01",
+        "framework_sha": "85684f9300908116a78138ea4c6036c35c9a1236"
+      },
+      {
+        "version": "3.0.5",
+        "released": "2022-07-13",
+        "framework_sha": "f1875d570e39de09040c8f79aa13cc56baab8db1"
+      },
+      {
+        "version": "3.3.0",
+        "released": "2022-08-30",
+        "framework_sha": "ffccd96b62ee8cec7740dab303538c5fc26ac543"
+      },
+      {
+        "version": "3.3.1",
+        "released": "2022-09-07",
+        "framework_sha": "4f9d92fbbdf072a70a70d2179a9f87392b94104c"
+      },
+      {
+        "version": "3.3.2",
+        "released": "2022-09-14",
+        "framework_sha": "e3c29ec00c9c825c891d75054c63fcc46454dca1"
+      },
+      {
+        "version": "3.3.3",
+        "released": "2022-09-28",
+        "framework_sha": "18a827f3933c19f51862dde3fa472197683249d6"
+      },
+      {
+        "version": "3.3.4",
+        "released": "2022-10-05",
+        "framework_sha": "eb6d86ee27deecba4a83536aa20f366a6044895c"
+      },
+      {
+        "version": "3.3.5",
+        "released": "2022-10-19",
+        "framework_sha": "d9111f64021372856901a1fd5bfbc386cade3318"
+      },
+      {
+        "version": "3.3.6",
+        "released": "2022-10-26",
+        "framework_sha": "6928314d505d2bb4777be05e45d7808a5aa91d2a"
+      },
+      {
+        "version": "3.3.7",
+        "released": "2022-11-02",
+        "framework_sha": "e99c9c7cd9f6c0b2f8ae6e3ebfd585239f5568f4"
+      },
+      {
+        "version": "3.3.8",
+        "released": "2022-11-09",
+        "framework_sha": "52b3dc25f6471c27b2144594abb11c741cb88f57"
+      },
+      {
+        "version": "3.3.9",
+        "released": "2022-11-23",
+        "framework_sha": "b8f7f1f9869bb2d116aa6a70dbeac61000b52849"
+      },
+      {
+        "version": "3.3.10",
+        "released": "2023-01-23",
+        "framework_sha": "135454af32477f815a7525073027a3ff9eff1bfd"
+      },
+      {
+        "version": "3.7.0",
+        "released": "2023-01-24",
+        "framework_sha": "b06b8b2710955028a6b562f5aa6fe62941d6febf"
+      },
+      {
+        "version": "3.7.1",
+        "released": "2023-02-01",
+        "framework_sha": "7048ed95a5ad3e43d697e0c397464193991fc230"
+      },
+      {
+        "version": "3.7.2",
+        "released": "2023-02-08",
+        "framework_sha": "32fb2f948e9b1a2d1b876ebee3558be7f51b457f"
+      },
+      {
+        "version": "3.7.3",
+        "released": "2023-02-09",
+        "framework_sha": "9944297138845a94256f1cf37beb88ff9a8e811a"
+      },
+      {
+        "version": "3.7.4",
+        "released": "2023-02-21",
+        "framework_sha": "b4bce91dd0f168179d46a7ae5eceb3572ba9637a"
+      },
+      {
+        "version": "3.7.5",
+        "released": "2023-02-23",
+        "framework_sha": "c07f7888888435fd9df505aa2efc38d3cf65681b"
+      },
+      {
+        "version": "3.7.6",
+        "released": "2023-03-01",
+        "framework_sha": "12cb4eb7a009f52b347b62ade7cb4854b926af72"
+      },
+      {
+        "version": "3.7.7",
+        "released": "2023-03-08",
+        "framework_sha": "2ad6cd72c040113b47ee9055e722606a490ef0da"
+      },
+      {
+        "version": "3.7.8",
+        "released": "2023-03-22",
+        "framework_sha": "90c64ed42ba53a52d18f0cb3b17666c8662ed2a0"
+      },
+      {
+        "version": "3.7.9",
+        "released": "2023-03-30",
+        "framework_sha": "62bd79521d8d007524e351747471ba66696fc2d4"
+      },
+      {
+        "version": "3.7.10",
+        "released": "2023-04-05",
+        "framework_sha": "4b12645012342076800eb701bcdfe18f87da21cf"
+      },
+      {
+        "version": "3.7.11",
+        "released": "2023-04-12",
+        "framework_sha": "f72efea43c3013323d1b95cff571f3c1caa37583"
+      },
+      {
+        "version": "3.7.12",
+        "released": "2023-04-20",
+        "framework_sha": "4d9e56e694b656610ab87fcf2efbcd226e0ed8cf"
+      },
+      {
+        "version": "3.10.0",
+        "released": "2023-05-10",
+        "framework_sha": "84a1e904f44f9b0e9c4510138010edcc653163f8"
+      },
+      {
+        "version": "3.10.1",
+        "released": "2023-05-17",
+        "framework_sha": "d3d8effc686d73e0114d71abdcccef63fa1f25d2"
+      },
+      {
+        "version": "3.10.2",
+        "released": "2023-05-24",
+        "framework_sha": "9cd3d0d9ff05768afa249e036acc66e8abe93bff"
+      },
+      {
+        "version": "3.10.3",
+        "released": "2023-06-02",
+        "framework_sha": "f92f44110e87bad5ff168335c36da6f6053036e6"
+      },
+      {
+        "version": "3.10.4",
+        "released": "2023-06-07",
+        "framework_sha": "682aa387cfe4fbd71ccd5418b2c2a075729a1c66"
+      },
+      {
+        "version": "3.10.5",
+        "released": "2023-06-14",
+        "framework_sha": "796c8ef79279f9c774545b3771238c3098dbefab"
+      },
+      {
+        "version": "3.10.6",
+        "released": "2023-07-13",
+        "framework_sha": "f468f3366c26a5092eb964a230ce7892fda8f2f8"
+      },
+      {
+        "version": "3.13.0",
+        "released": "2023-08-16",
+        "framework_sha": "efbf63d9c66b9f6ec30e9ad4611189aa80003d31"
+      },
+      {
+        "version": "3.13.1",
+        "released": "2023-08-23",
+        "framework_sha": "e1e47221e86272429674bec4f1bd36acc4fc7b77"
+      },
+      {
+        "version": "3.13.2",
+        "released": "2023-08-30",
+        "framework_sha": "ff5b5b5fa6f35b717667719ddfdb1521d8bdd05a"
+      },
+      {
+        "version": "3.13.3",
+        "released": "2023-09-07",
+        "framework_sha": "2524052335ec76bb03e04ede244b071f1b86d190"
+      },
+      {
+        "version": "3.13.4",
+        "released": "2023-09-13",
+        "framework_sha": "367f9ea16bfae1ca451b9cc27c1366870b187ae2"
+      },
+      {
+        "version": "3.13.3",
+        "released": "2023-09-13",
+        "framework_sha": "b0daa737b75b007b4777e5cc2bd42b1b18a6fd4f"
+      },
+      {
+        "version": "3.13.5",
+        "released": "2023-09-20",
+        "framework_sha": "12fccda598477eddd19f93040a1dba24f915b9be"
+      },
+      {
+        "version": "3.13.6",
+        "released": "2023-09-27",
+        "framework_sha": "ead455963c12b453cdb2358cad34969c76daf180"
+      },
+      {
+        "version": "3.13.7",
+        "released": "2023-10-11",
+        "framework_sha": "2f708eb8396e362e280fac22cf171c2cb467343c"
+      },
+      {
+        "version": "3.13.8",
+        "released": "2023-10-18",
+        "framework_sha": "6c4930c4ac86fb286f30e31d0ec8bffbcbb9953e"
+      },
+      {
+        "version": "3.13.9",
+        "released": "2023-10-25",
+        "framework_sha": "d211f42860350d914a5ad8102f9ec32764dc6d06"
+      },
+      {
+        "version": "3.16.0",
+        "released": "2023-11-15",
+        "framework_sha": "db7ef5bf9f59442b0e200a90587e8fa5e0c6336a"
+      },
+      {
+        "version": "3.16.1",
+        "released": "2023-11-27",
+        "framework_sha": "7f20e5d18ce4cb80c621533090a7c5113f5bdc52"
+      },
+      {
+        "version": "3.16.2",
+        "released": "2023-11-30",
+        "framework_sha": "9e1c857886f07d342cf106f2cd588bcd5e031bb2"
+      },
+      {
+        "version": "3.16.3",
+        "released": "2023-12-06",
+        "framework_sha": "b0366e0a3f089e15fd89c97604ab402fe26b724c"
+      },
+      {
+        "version": "3.16.4",
+        "released": "2023-12-13",
+        "framework_sha": "2e9cb0aa71a386a91f73f7088d115c0d96654829"
+      },
+      {
+        "version": "3.16.5",
+        "released": "2023-12-20",
+        "framework_sha": "78666c8dc57e9f7548ca9f8dd0740fbf0c658dc9"
+      },
+      {
+        "version": "3.16.6",
+        "released": "2024-01-10",
+        "framework_sha": "46787ee49c1fd80ab603f0702733edab54653aef"
+      },
+      {
+        "version": "3.16.7",
+        "released": "2024-01-11",
+        "framework_sha": "ef1af02aead6fe2414f3aafa5a61087b610e1332"
+      },
+      {
+        "version": "3.16.8",
+        "released": "2024-01-17",
+        "framework_sha": "67457e669f79e9f8d13d7a68fe09775fefbb79f4"
+      },
+      {
+        "version": "3.16.9",
+        "released": "2024-01-25",
+        "framework_sha": "41456452f29d64e8deb623a3c927524bcf9f111b"
+      },
+      {
+        "version": "3.19.0",
+        "released": "2024-02-15",
+        "framework_sha": "bae5e49bc2a867403c43b2aae2de8f8c33b037e4"
+      },
+      {
+        "version": "3.19.1",
+        "released": "2024-02-21",
+        "framework_sha": "abb292a07e20d696c4568099f918f6c5f330e6b0"
+      },
+      {
+        "version": "3.19.2",
+        "released": "2024-02-28",
+        "framework_sha": "7482962148e8d758338d8a28f589f317e1e42ba4"
+      },
+      {
+        "version": "3.19.3",
+        "released": "2024-03-08",
+        "framework_sha": "ba393198430278b6595976de84fe170f553cc728"
+      },
+      {
+        "version": "3.19.4",
+        "released": "2024-03-21",
+        "framework_sha": "68bfaea224880b488c617afe30ab12091ea8fa4e"
+      },
+      {
+        "version": "3.19.5",
+        "released": "2024-03-28",
+        "framework_sha": "300451adae589accbece3490f4396f10bdf15e6e"
+      },
+      {
+        "version": "3.19.6",
+        "released": "2024-04-17",
+        "framework_sha": "54e66469a933b60ddf175f858f82eaeb97e48c8d"
+      },
+      {
+        "version": "3.22.0",
+        "released": "2024-05-13",
+        "framework_sha": "5dcb86f68f239346676ceb1ed1ea385bd215fba1"
+      },
+      {
+        "version": "3.22.1",
+        "released": "2024-05-22",
+        "framework_sha": "a14f74ff3a1cbd521163c5f03d68113d50af93d3"
+      },
+      {
+        "version": "3.22.2",
+        "released": "2024-06-06",
+        "framework_sha": "761747bfc538b5af34aa0d3fac380f1bc331ec49"
+      },
+      {
+        "version": "3.22.3",
+        "released": "2024-07-18",
+        "framework_sha": "b0850beeb25f6d5b10426284f506557f66181b36"
+      },
+      {
+        "version": "3.24.0",
+        "released": "2024-08-06",
+        "framework_sha": "80c2e84975bbd28ecf5f8d4bd4ca5a2490bfc819"
+      },
+      {
+        "version": "3.24.1",
+        "released": "2024-08-21",
+        "framework_sha": "5874a72aa4c779a02553007c47dacbefba2374dc"
+      },
+      {
+        "version": "3.24.2",
+        "released": "2024-09-04",
+        "framework_sha": "4cf269e36de2573851eaef3c763994f8f9be494d"
+      },
+      {
+        "version": "3.24.3",
+        "released": "2024-09-12",
+        "framework_sha": "2663184aa79047d0a33a14a3b607954f8fdd8730"
+      },
+      {
+        "version": "3.24.4",
+        "released": "2024-10-24",
+        "framework_sha": "603104015dd692ea3403755b55d07813d5cf8965"
+      },
+      {
+        "version": "3.24.5",
+        "released": "2024-11-14",
+        "framework_sha": "dec2ee5c1f98f8e84a7d5380c05eb8a3d0a81668"
+      },
+      {
+        "version": "3.27.0",
+        "released": "2024-12-11",
+        "framework_sha": "8495dee1fd4aacbe9de707e7581203232f591b2f"
+      },
+      {
+        "version": "3.27.1",
+        "released": "2024-12-16",
+        "framework_sha": "17025dd88227cd9532c33fa78f5250d548d87e9a"
+      },
+      {
+        "version": "3.27.2",
+        "released": "2025-01-13",
+        "framework_sha": "68415ad1d920f6fe5ec284f5c2febf7c4dd5b0b3"
+      },
+      {
+        "version": "3.27.3",
+        "released": "2025-01-21",
+        "framework_sha": "c519ee916eaeb88923e67befb89c0f1dabfa83e6"
+      },
+      {
+        "version": "3.27.4",
+        "released": "2025-02-05",
+        "framework_sha": "d8a9f9a52e5af486f80d932e838ee93861ffd863"
+      },
+      {
+        "version": "3.29.0",
+        "released": "2025-02-12",
+        "framework_sha": "35c388afb57ef061d06a39b537336c87e0e3d1b1"
+      },
+      {
+        "version": "3.29.1",
+        "released": "2025-03-06",
+        "framework_sha": "09de023485e95e6d1225c2baa44b8feb85e0d45f"
+      },
+      {
+        "version": "3.29.2",
+        "released": "2025-03-14",
+        "framework_sha": "c23637390482d4cf9598c3ce3f2be31aa7332daf"
+      },
+      {
+        "version": "3.29.3",
+        "released": "2025-04-14",
+        "framework_sha": "ea121f8859e4b13e47a8f845e4586164519588bc"
+      },
+      {
+        "version": "3.32.0",
+        "released": "2025-05-20",
+        "framework_sha": "be698c48a6750c8cb8e61c740ca9991bb947aba2"
+      },
+      {
+        "version": "3.32.1",
+        "released": "2025-05-29",
+        "framework_sha": "b25305a8832cfc6ba632a7f87ad455e319dccce8"
+      },
+      {
+        "version": "3.32.2",
+        "released": "2025-06-04",
+        "framework_sha": "8defaa71a77c16e8547abdbfad2053ce3a6e2d5b"
+      },
+      {
+        "version": "3.32.3",
+        "released": "2025-06-11",
+        "framework_sha": "5c1433509f997e9059d230942bdf83f1b88a179e"
+      },
+      {
+        "version": "3.32.4",
+        "released": "2025-06-13",
+        "framework_sha": "6fba2447e95c451518584c35e25f5433f14d888c"
+      },
+      {
+        "version": "3.32.5",
+        "released": "2025-06-25",
+        "framework_sha": "fcf2c11572af6f390246c056bc905eca609533a0"
+      },
+      {
+        "version": "3.32.6",
+        "released": "2025-07-09",
+        "framework_sha": "077b4a4ce10a07b82caa6897f0c626f9c0a3ac90"
+      },
+      {
+        "version": "3.32.7",
+        "released": "2025-07-16",
+        "framework_sha": "d7b523b356d15fb81e7d340bbe52b47f93937323"
+      },
+      {
+        "version": "3.32.8",
+        "released": "2025-07-25",
+        "framework_sha": "edada7c56edf4a183c1735310e123c7f923584f1"
+      },
+      {
+        "version": "3.35.1",
+        "released": "2025-08-14",
+        "framework_sha": "20f82749394e68bcfbbeee96bad384abaae09c13"
+      },
+      {
+        "version": "3.35.0",
+        "released": "2025-08-14",
+        "framework_sha": "b8962555571d8c170cff8e76023ea7bf60e5ec4b"
+      },
+      {
+        "version": "3.35.2",
+        "released": "2025-08-25",
+        "framework_sha": "05db9689081f091050f01aed79f04dce0c750154"
+      },
+      {
+        "version": "3.35.3",
+        "released": "2025-09-04",
+        "framework_sha": "a402d9a4376add5bc2d6b1e33e53edaae58c07f8"
+      },
+      {
+        "version": "3.35.4",
+        "released": "2025-09-16",
+        "framework_sha": "d693b4b9dbac2acd4477aea4555ca6dcbea44ba2"
+      },
+      {
+        "version": "3.35.5",
+        "released": "2025-09-29",
+        "framework_sha": "ac4e799d237041cf905519190471f657b657155a"
+      },
+      {
+        "version": "3.35.6",
+        "released": "2025-10-09",
+        "framework_sha": "9f455d2486bcb28cad87b062475f42edc959f636"
+      },
+      {
+        "version": "3.35.7",
+        "released": "2025-10-23",
+        "framework_sha": "adc901062556672b4138e18a4dc62a4be8f4b3c2"
+      },
+      {
+        "version": "3.38.0",
+        "released": "2025-11-12",
+        "framework_sha": "a0e9b9dbf78c8a5ef39b45a7efd40ed2de19c1a7"
+      },
+      {
+        "version": "3.38.1",
+        "released": "2025-11-13",
+        "framework_sha": "b45fa18946ecc2d9b4009952c636ba7e2ffbb787"
+      }
+    ],
+    "beta": [
+      {
+        "version": "v0.1.5",
+        "released": "2018-03-15",
+        "framework_sha": "3ea4d06340a97a1e9d7cae97567c64e0569dcaa2"
+      },
+      {
+        "version": "v0.2.3",
+        "released": "2018-04-02",
+        "framework_sha": "5a58b36e36b8d7aace89d3950e6deb307956a6a0"
+      },
+      {
+        "version": "v0.2.8",
+        "released": "2018-04-09",
+        "framework_sha": "b397406561f5e7a9c94e28f58d9e49fca0dd58b7"
+      },
+      {
+        "version": "v0.3.1",
+        "released": "2018-04-24",
+        "framework_sha": "12bbaba9ae044d0ea77da4dd5e4db15eed403f09"
+      },
+      {
+        "version": "v0.3.2",
+        "released": "2018-05-07",
+        "framework_sha": "44b7e7d3f42f050a79712daab253af06e9daf530"
+      },
+      {
+        "version": "v0.4.4",
+        "released": "2018-05-22",
+        "framework_sha": "f9bb4289e9fd861d70ae78bcc3a042ef1b35cc9d"
+      },
+      {
+        "version": "v0.5.1",
+        "released": "2018-06-19",
+        "framework_sha": "c7ea3ca377e909469c68f2ab878a5bc53d3cf66b"
+      },
+      {
+        "version": "v0.6.0",
+        "released": "2018-08-28",
+        "framework_sha": "9299c02cf708497d6f72edda8efae0bb8340660e"
+      },
+      {
+        "version": "v0.7.3",
+        "released": "2018-09-05",
+        "framework_sha": "3b309bda072a6b326e8aa4591a5836af600923ce"
+      },
+      {
+        "version": "v0.8.2",
+        "released": "2018-09-18",
+        "framework_sha": "5ab9e70727d858def3a586db7fb98ee580352957"
+      },
+      {
+        "version": "v0.9.4",
+        "released": "2018-10-09",
+        "framework_sha": "f37c235c32fc15babe6dc7b7bc2ee4387e5ecf92"
+      },
+      {
+        "version": "v0.10.2",
+        "released": "2018-11-06",
+        "framework_sha": "d8cbb80206db06d151206f8b599b7dde5a386a2d"
+      },
+      {
+        "version": "v0.11.3",
+        "released": "2018-11-13",
+        "framework_sha": "72bf075e8d6961d2ca6df462b2228954f8d0e73a"
+      },
+      {
+        "version": "v0.11.7",
+        "released": "2018-11-19",
+        "framework_sha": "7a005e1dcda665ace7241a24e79fae1a71f17b18"
+      },
+      {
+        "version": "v0.11.8",
+        "released": "2018-11-20",
+        "framework_sha": "f5b02e3c05ed1ab31e890add84fb56e35de2d392"
+      },
+      {
+        "version": "v0.11.9",
+        "released": "2018-11-21",
+        "framework_sha": "d48e6e433cc5ca67b24b19f70aaa197e84ba63c1"
+      },
+      {
+        "version": "v0.11.10",
+        "released": "2018-11-27",
+        "framework_sha": "c27c4a265e9ad295e5d434cddabbc639b2e3542d"
+      },
+      {
+        "version": "v0.11.11",
+        "released": "2018-11-28",
+        "framework_sha": "e7680128afbbde443d69f89bb264015276a8475a"
+      },
+      {
+        "version": "v0.11.12",
+        "released": "2018-11-29",
+        "framework_sha": "06ec8d3b41beb469d845626e36a246ee09300fa7"
+      },
+      {
+        "version": "v0.11.13",
+        "released": "2018-11-30",
+        "framework_sha": "58c8489fcdb4e4ef6c010117584c9b23d15221aa"
+      },
+      {
+        "version": "v1.0.0",
+        "released": "2018-12-04",
+        "framework_sha": "5391447fae6209bb21a89e6a5a6583cac1af9b4b"
+      },
+      {
+        "version": "v1.1.8",
+        "released": "2019-01-29",
+        "framework_sha": "985ccb6d14c6ce5ce74823a4d366df2438eac44f"
+      },
+      {
+        "version": "v1.2.1",
+        "released": "2019-02-26",
+        "framework_sha": "8661d8aecd626f7f57ccbcb735553edc05a2e713"
+      },
+      {
+        "version": "v1.3.8",
+        "released": "2019-03-15",
+        "framework_sha": "e5b1ed7a7f7b85c1877e09a9495681f719be5578"
+      },
+      {
+        "version": "v1.4.9-hotfix.1",
+        "released": "2019-04-12",
+        "framework_sha": "88fa7ea4031f5c86225573e58e5558dc4ea1c251"
+      },
+      {
+        "version": "v1.5.4",
+        "released": "2019-04-27",
+        "framework_sha": "b593f5167bce84fb3cad5c258477bf3abc1b14eb"
+      },
+      {
+        "version": "v1.5.4-hotfix.1",
+        "released": "2019-04-30",
+        "framework_sha": "09cbc34a0b19cef287a82aa4b9966d525369eecc"
+      },
+      {
+        "version": "v1.5.4-hotfix.2",
+        "released": "2019-05-02",
+        "framework_sha": "7a4c33425ddd78c54aba07d86f3f9a4a0051769b"
+      },
+      {
+        "version": "v1.6.3",
+        "released": "2019-05-30",
+        "framework_sha": "bc7bc940836f1f834699625426795fd6f07c18ec"
+      },
+      {
+        "version": "v1.7.8+hotfix.2",
+        "released": "2019-07-02",
+        "framework_sha": "2e540931f73593e35627592ca4f9a4ca3035ed31"
+      },
+      {
+        "version": "v1.7.8+hotfix.3",
+        "released": "2019-07-09",
+        "framework_sha": "b712a172f9694745f50505c93340883493b505e5"
+      },
+      {
+        "version": "v1.7.8+hotfix.4",
+        "released": "2019-07-19",
+        "framework_sha": "20e59316b8b8474554b38493b8ca888794b0234a"
+      },
+      {
+        "version": "v1.8.3",
+        "released": "2019-08-08",
+        "framework_sha": "e4ebcdf6f4facee5779c38a04d91d08dc58ea7a4"
+      },
+      {
+        "version": "v1.9.1+hotfix.1",
+        "released": "2019-09-04",
+        "framework_sha": "a1fb3fabec40144f57344635c37c28eed4fb122b"
+      },
+      {
+        "version": "v1.9.1+hotfix.2",
+        "released": "2019-09-08",
+        "framework_sha": "2d2a1ffec95cc70a3218872a2cd3f8de4933c42f"
+      },
+      {
+        "version": "v1.9.1+hotfix.3",
+        "released": "2019-09-26",
+        "framework_sha": "a72edc27064c2cbfbbae17ea1695333e1b3d9595"
+      },
+      {
+        "version": "v1.9.1+hotfix.4",
+        "released": "2019-09-27",
+        "framework_sha": "cc949a8e8b9cf394b9290a8e80f87af3e207dce5"
+      },
+      {
+        "version": "v1.10.7",
+        "released": "2019-10-10",
+        "framework_sha": "e70236e36ce1d32067dc68eb55519ec3e14b6b01"
+      },
+      {
+        "version": "v1.11.0",
+        "released": "2019-11-22",
+        "framework_sha": "856a90e67c9284124d44d2be6c785bacd3a1c772"
+      },
+      {
+        "version": "v1.12.13+hotfix.1",
+        "released": "2019-12-03",
+        "framework_sha": "5b07015393539822da275ab9a348b9e9ce92a29e"
+      },
+      {
+        "version": "v1.12.13+hotfix.2",
+        "released": "2019-12-04",
+        "framework_sha": "4f54e46f56c2ffc92eb440dbdab1a7f8e722e593"
+      },
+      {
+        "version": "v1.12.13+hotfix.3",
+        "released": "2019-12-06",
+        "framework_sha": "57f2df76d75cff290cbe2765b07db1ad3e67b50d"
+      },
+      {
+        "version": "v1.12.13+hotfix.4",
+        "released": "2019-12-10",
+        "framework_sha": "fb60324e6fa791bedeade8be4773a42037e11f62"
+      },
+      {
+        "version": "v1.12.13+hotfix.6",
+        "released": "2019-12-11",
+        "framework_sha": "18cd7a3601bcffb36fdf2f679f763b5e827c2e8e"
+      },
+      {
+        "version": "v1.12.13+hotfix.5",
+        "released": "2019-12-11",
+        "framework_sha": "27321ebbad34b0a3fafe99fac037102196d655ff"
+      },
+      {
+        "version": "v1.13.6",
+        "released": "2020-01-15",
+        "framework_sha": "659dc8129d4edb9166e9a0d600439d135740933f"
+      },
+      {
+        "version": "v1.14.6",
+        "released": "2020-02-05",
+        "framework_sha": "fabeb2a16f1d008ab8230f450c49141d35669798"
+      },
+      {
+        "version": "v1.15.17",
+        "released": "2020-03-17",
+        "framework_sha": "2294d75bfa8d067ba90230c0fc2268f3636d7584"
+      },
+      {
+        "version": "1.17.0-dev.3.1",
+        "released": "2020-04-06",
+        "framework_sha": "d3ed9ec945f8869f0e136c357d0c2a6be2b60c98"
+      },
+      {
+        "version": "1.17.0-3.2.pre",
+        "released": "2020-04-22",
+        "framework_sha": "2a7bc389f28d83c581f7ddd4601588a22e12512e"
+      },
+      {
+        "version": "1.17.0-3.3.pre",
+        "released": "2020-04-29",
+        "framework_sha": "0da1ab09224f6c6d69fcff1195a3662fe7ad7534"
+      },
+      {
+        "version": "1.17.0-3.4.pre",
+        "released": "2020-05-02",
+        "framework_sha": "e6b34c2b5c96bb95325269a29a84e83ed8909b5f"
+      },
+      {
+        "version": "1.18.0-11.1.pre",
+        "released": "2020-05-14",
+        "framework_sha": "2738a1148ba6c9a6114df62358109407c3ef2553"
+      },
+      {
+        "version": "1.19.0-4.1.pre",
+        "released": "2020-06-10",
+        "framework_sha": "f994b769743368b36b9c03fb359f62230b60ab92"
+      },
+      {
+        "version": "1.19.0-4.3.pre",
+        "released": "2020-07-01",
+        "framework_sha": "8fe7655ed20ffd1395f68e30539a847a01a30351"
+      },
+      {
+        "version": "1.19.0-4.2.pre",
+        "released": "2020-07-01",
+        "framework_sha": "9b9b543d9265484132c798adaab6caca52055b08"
+      },
+      {
+        "version": "1.20.0-7.2.pre",
+        "released": "2020-07-21",
+        "framework_sha": "a2bde82fbd52e09057a4146f46889f4e10342d32"
+      },
+      {
+        "version": "1.20.0-7.3.pre",
+        "released": "2020-07-29",
+        "framework_sha": "e606910f28be51c8151f6169072afe3b3a8b3c5e"
+      },
+      {
+        "version": "1.20.0-7.4.pre",
+        "released": "2020-08-03",
+        "framework_sha": "916c3ac648aa0498a70f32b5fc4f6c51447628e3"
+      },
+      {
+        "version": "1.20.2",
+        "released": "2020-08-14",
+        "framework_sha": "bbfbf1770cca2da7c82e887e4e4af910034800b6"
+      },
+      {
+        "version": "1.21.0-9.1.pre",
+        "released": "2020-08-19",
+        "framework_sha": "be9bc8cb3942bda5d8ef4e44b44616c470625e18"
+      },
+      {
+        "version": "1.21.0-9.2.pre",
+        "released": "2020-08-28",
+        "framework_sha": "81a45ec2e5f80fa71d5135f1702ce540558b416d"
+      },
+      {
+        "version": "1.22.0-12.1.pre",
+        "released": "2020-09-16",
+        "framework_sha": "8b3760638a189741cd9ca881aa2dd237c1df1be5"
+      },
+      {
+        "version": "1.22.0-12.2.pre",
+        "released": "2020-09-28",
+        "framework_sha": "2bafdc822636426fa09afb43236400a60ea432b2"
+      },
+      {
+        "version": "1.22.0-12.3.pre",
+        "released": "2020-09-29",
+        "framework_sha": "d408d302e22179d598f467e11da5dd968dbdc9ec"
+      },
+      {
+        "version": "1.22.0-12.4.pre",
+        "released": "2020-10-08",
+        "framework_sha": "f30b7f4db93ee747cd727df747941a28ead25ff5"
+      },
+      {
+        "version": "1.23.0-18.1.pre",
+        "released": "2020-10-15",
+        "framework_sha": "198df796aa80073ef22bdf249e614e2ff33c6895"
+      },
+      {
+        "version": "1.24.0-10.2.pre",
+        "released": "2020-11-19",
+        "framework_sha": "022b333a089afb81c471ec43d1f1f4f26305d876"
+      },
+      {
+        "version": "1.25.0-8.1.pre",
+        "released": "2020-12-16",
+        "framework_sha": "8f89f6505b941329a864fef1527243a72800bf4d"
+      },
+      {
+        "version": "1.25.0-8.2.pre",
+        "released": "2021-01-06",
+        "framework_sha": "b0a22998593fc605c723dee8ff4d9315c32cfe2c"
+      },
+      {
+        "version": "1.25.0-8.3.pre",
+        "released": "2021-01-15",
+        "framework_sha": "5d36f2e7f5387b6c751449258ade8e4e6edf99be"
+      },
+      {
+        "version": "1.26.0-17.2.pre",
+        "released": "2021-02-04",
+        "framework_sha": "79b49b9e1057f90ebf797725233c6b311722de69"
+      },
+      {
+        "version": "1.26.0-17.3.pre",
+        "released": "2021-02-05",
+        "framework_sha": "4b50ca7f7fbf56be72e54cd200825b760416a356"
+      },
+      {
+        "version": "1.26.0-17.4.pre",
+        "released": "2021-02-10",
+        "framework_sha": "48c9d3e0e19e8fec84f1d316ce0559f26ca7277d"
+      },
+      {
+        "version": "1.26.0-17.5.pre",
+        "released": "2021-02-11",
+        "framework_sha": "1fe38dcb5fc58242c6e0904a318bcc3ed5a4d837"
+      },
+      {
+        "version": "1.26.0-17.6.pre",
+        "released": "2021-02-16",
+        "framework_sha": "a29104a69b102a7485cd00d358eaeab219d258ab"
+      },
+      {
+        "version": "1.26.0-17.7.pre",
+        "released": "2021-02-24",
+        "framework_sha": "68e7d2e301e1969275cd11947e900b6b80405052"
+      },
+      {
+        "version": "1.26.0-17.8.pre",
+        "released": "2021-02-25",
+        "framework_sha": "044f2cf5607a26f8818dab0f766400e85c52bdff"
+      },
+      {
+        "version": "2.0.0",
+        "released": "2021-03-03",
+        "framework_sha": "60bd88df915880d23877bfc1602e8ddcf4c4dd2a"
+      },
+      {
+        "version": "2.0.1",
+        "released": "2021-03-04",
+        "framework_sha": "c5a4b4029c0798f37c4a39b479d7cb75daa7b05c"
+      },
+      {
+        "version": "2.0.2",
+        "released": "2021-03-15",
+        "framework_sha": "8962f6dc68ec8e2206ac2fa874da4a453856c7d3"
+      },
+      {
+        "version": "2.1.0-12.2.pre",
+        "released": "2021-03-18",
+        "framework_sha": "5bedb7b1d5698ce2c1c67aaf9afae7b3948b172a"
+      },
+      {
+        "version": "2.2.0-10.1.pre",
+        "released": "2021-04-15",
+        "framework_sha": "0941968447ea8058e56e1479f7e53147149b739e"
+      },
+      {
+        "version": "2.2.0-10.2.pre",
+        "released": "2021-04-29",
+        "framework_sha": "b5017bf8de877083978bfeb1874d236c3fc83029"
+      },
+      {
+        "version": "2.2.0-10.3.pre",
+        "released": "2021-05-10",
+        "framework_sha": "06e2fd63574bad2edafbe4653104ed76871ee0b1"
+      },
+      {
+        "version": "2.2.0",
+        "released": "2021-05-19",
+        "framework_sha": "b22742018b3edf16c6cadd7b76d9db5e7f9064b5"
+      },
+      {
+        "version": "2.2.2",
+        "released": "2021-06-11",
+        "framework_sha": "d79295af24c3ed621c33713ecda14ad196fd9c31"
+      },
+      {
+        "version": "2.3.0-24.1.pre",
+        "released": "2021-06-25",
+        "framework_sha": "615957513eb43b128a16048ab5aa2daaba1656cd"
+      },
+      {
+        "version": "2.4.0-4.2.pre",
+        "released": "2021-07-22",
+        "framework_sha": "f18b9281c2280c2646aa3d4348715ed5bb9446c8"
+      },
+      {
+        "version": "2.4.0-4.1.pre",
+        "released": "2021-07-22",
+        "framework_sha": "7636dea9ca4fe4377dd557c262a992d0cd894bc7"
+      },
+      {
+        "version": "2.5.0-5.1.pre",
+        "released": "2021-08-12",
+        "framework_sha": "65cf7de5f45140010a5d2989f5abbbf530708a6b"
+      },
+      {
+        "version": "2.5.0-5.2.pre",
+        "released": "2021-08-19",
+        "framework_sha": "19c61fed0da681ba2068c97e22add3bde38e51e4"
+      },
+      {
+        "version": "2.5.0-5.3.pre",
+        "released": "2021-09-02",
+        "framework_sha": "a7fb06d6faa2f0ad0da124c79a4eb26ae091baa5"
+      },
+      {
+        "version": "2.5.0",
+        "released": "2021-09-10",
+        "framework_sha": "4cc385b4b84ac2f816d939a49ea1f328c4e0b48e"
+      },
+      {
+        "version": "2.6.0-5.2.pre",
+        "released": "2021-09-16",
+        "framework_sha": "400608f101bcfb21db99ac4d5df763a80c279337"
+      },
+      {
+        "version": "2.7.0-3.0.pre",
+        "released": "2021-10-20",
+        "framework_sha": "c19845a8c347adebc2c672f5e51b74855e645be2"
+      },
+      {
+        "version": "2.7.0-3.1.pre",
+        "released": "2021-10-28",
+        "framework_sha": "fc7015e35aac7ab785e7ae15a47db5c9e669ec7f"
+      },
+      {
+        "version": "2.8.0-3.1.pre",
+        "released": "2021-11-12",
+        "framework_sha": "3dab5550407a2c2fe70a762acfdfde93311148de"
+      },
+      {
+        "version": "2.8.0-3.2.pre",
+        "released": "2021-11-18",
+        "framework_sha": "2901cd720879ba3d7ba7cbd7d447ec9e80f937b6"
+      },
+      {
+        "version": "2.8.0-3.3.pre",
+        "released": "2021-12-01",
+        "framework_sha": "262b70ece1aebf84f132c51ec4cf90be605ce61b"
+      },
+      {
+        "version": "2.9.0-0.1.pre",
+        "released": "2021-12-15",
+        "framework_sha": "8f1f9c10f04b8f106d78275e93ceead8ea837d8b"
+      },
+      {
+        "version": "2.10.0-0.1.pre",
+        "released": "2022-01-12",
+        "framework_sha": "628f0e3f3a01d6e6b5fd8c2d7b8f0d58883b6673"
+      },
+      {
+        "version": "2.10.0-0.2.pre",
+        "released": "2022-01-20",
+        "framework_sha": "73adb1406a9cff796e2203ad16fd285220a6ec97"
+      },
+      {
+        "version": "2.10.0-0.3.pre",
+        "released": "2022-01-27",
+        "framework_sha": "fdd0af78bbda27e1084ec859b27765d927cbe27e"
+      },
+      {
+        "version": "2.11.0-0.1.pre",
+        "released": "2022-02-16",
+        "framework_sha": "b101bfe32f634566e7cb2791a9efe19cf8828b15"
+      },
+      {
+        "version": "2.12.0-4.1.pre",
+        "released": "2022-03-17",
+        "framework_sha": "680962aa75a3c0ea8a55c57adc98944f5558bafd"
+      },
+      {
+        "version": "2.12.0-4.2.pre",
+        "released": "2022-04-06",
+        "framework_sha": "5c931b769b581d536ee5b5d58677d39a110da3d0"
+      },
+      {
+        "version": "2.13.0-0.1.pre",
+        "released": "2022-04-13",
+        "framework_sha": "13a2fb10b838971ce211230f8ffdd094c14af02c"
+      },
+      {
+        "version": "2.13.0-0.2.pre",
+        "released": "2022-04-20",
+        "framework_sha": "8662e22bac54c71bc4fa5a4f37e9ee80bfd08a4e"
+      },
+      {
+        "version": "2.13.0-0.3.pre",
+        "released": "2022-04-27",
+        "framework_sha": "5293f3cd4427b4b48ed155e7a3852c6b3c53d94a"
+      },
+      {
+        "version": "2.13.0-0.4.pre",
+        "released": "2022-05-05",
+        "framework_sha": "25caf1461b8f643092a9f6f5b224453b5c057d10"
+      },
+      {
+        "version": "3.1.0",
+        "released": "2022-05-26",
+        "framework_sha": "bcea432bce54a83306b3c00a7ad0ed98f777348d"
+      },
+      {
+        "version": "3.1.0-9.0.pre",
+        "released": "2022-06-15",
+        "framework_sha": "f28e570c8cb12a004fae2d796d0d9cd46603bde9"
+      },
+      {
+        "version": "3.3.0-0.0.pre",
+        "released": "2022-07-20",
+        "framework_sha": "f90da9b1672f7d006ba760fbb8fd1aa17af1a82a"
+      },
+      {
+        "version": "3.3.0-0.1.pre",
+        "released": "2022-07-27",
+        "framework_sha": "d952ca86d64772b1b9b0df27cf9ea145e80c38e5"
+      },
+      {
+        "version": "3.3.0-0.2.pre",
+        "released": "2022-08-03",
+        "framework_sha": "7ac27ac8e6a42750c475ba8a2a3c7047b93fd949"
+      },
+      {
+        "version": "3.3.0-0.3.pre",
+        "released": "2022-08-10",
+        "framework_sha": "8c1149878bbb8f062aecfab4d825e5b87bdb4487"
+      },
+      {
+        "version": "3.3.0-0.4.pre",
+        "released": "2022-08-20",
+        "framework_sha": "3c0bee85b8e43b860877922bdc411a7333db4d32"
+      },
+      {
+        "version": "3.3.0-0.5.pre",
+        "released": "2022-08-23",
+        "framework_sha": "096162697a9cdc79f4e47f7230d70935fa81fd24"
+      },
+      {
+        "version": "3.4.0-17.2.pre",
+        "released": "2022-09-21",
+        "framework_sha": "d6260f127fe3f88c98231243b387b48448479bff"
+      },
+      {
+        "version": "3.4.0-17.1.pre",
+        "released": "2022-09-21",
+        "framework_sha": "98338388391370431e7a3c0e4602b1a29fbd1581"
+      },
+      {
+        "version": "3.4.0-34.1.pre",
+        "released": "2022-10-06",
+        "framework_sha": "71520442d4d0d41b2d158c519928d90ddab3766f"
+      },
+      {
+        "version": "3.6.0-0.1.pre",
+        "released": "2022-11-17",
+        "framework_sha": "75927305ff855f76a9ef704f9b4a86fa2fce7292"
+      },
+      {
+        "version": "3.7.0-1.1.pre",
+        "released": "2022-12-08",
+        "framework_sha": "e599f02c7af4aa8aba0e8e96f71c737f85be3c6e"
+      },
+      {
+        "version": "3.7.0-1.2.pre",
+        "released": "2022-12-20",
+        "framework_sha": "c29b09b8782b39b1678bc9c861f40902086fb7c8"
+      },
+      {
+        "version": "3.7.0-1.3.pre",
+        "released": "2023-01-05",
+        "framework_sha": "9b4416aaa79bf984d06aa40ab515a274a50a75a7"
+      },
+      {
+        "version": "3.7.0-1.4.pre",
+        "released": "2023-01-11",
+        "framework_sha": "686fe913dc963954b99e62048569cb9ac8e551c8"
+      },
+      {
+        "version": "3.7.0-1.5.pre",
+        "released": "2023-01-23",
+        "framework_sha": "099b3f4bf1581796fac3848d3381dbf2f29edbea"
+      },
+      {
+        "version": "3.8.0-10.1.pre",
+        "released": "2023-02-17",
+        "framework_sha": "1a0a03a41d6613c10bab23508dee456f184b181b"
+      },
+      {
+        "version": "3.9.0-0.1.pre",
+        "released": "2023-03-15",
+        "framework_sha": "8b9b90e75107181aadc303d8d7422205863a35dd"
+      },
+      {
+        "version": "3.9.0-0.1.pre",
+        "released": "2023-03-15",
+        "framework_sha": "f3d140022d6a68df8b0e3776594819ce0ee94e2d"
+      },
+      {
+        "version": "3.9.0-0.1.pre",
+        "released": "2023-03-16",
+        "framework_sha": "f732038a8cf4562ce38a1d7debb30209ae3da896"
+      },
+      {
+        "version": "3.9.0-0.2.pre",
+        "released": "2023-03-24",
+        "framework_sha": "0df8557c56a182d31fa024eeb08c428ae52edf7f"
+      },
+      {
+        "version": "3.10.0-1.1.pre",
+        "released": "2023-04-12",
+        "framework_sha": "ecdb7841df7de82e8c1abf6d98db25f160e7fde4"
+      },
+      {
+        "version": "3.10.0-1.3.pre",
+        "released": "2023-04-19",
+        "framework_sha": "d11aff97d2df15a076d285f6ad18da75c0d75ddd"
+      },
+      {
+        "version": "3.10.0-1.4.pre",
+        "released": "2023-04-26",
+        "framework_sha": "a14a4eac6132065fcbd853a2ff376e6911cdb2ea"
+      },
+      {
+        "version": "3.10.0-1.5.pre",
+        "released": "2023-05-03",
+        "framework_sha": "b1c77b7ed32346fe829c0ca97bd85d19290d54ae"
+      },
+      {
+        "version": "3.11.0-0.0.pre",
+        "released": "2023-05-10",
+        "framework_sha": "74e4b092e5212ebf8292dde2a48d3da960c0920b"
+      },
+      {
+        "version": "3.11.0-0.1.pre",
+        "released": "2023-05-24",
+        "framework_sha": "350d2c3a6ca4c3c39787e1c18a8ddf0aca8d2ae2"
+      },
+      {
+        "version": "3.12.0",
+        "released": "2023-06-08",
+        "framework_sha": "8fcb74dbc16b9edb3d3f14c11c627d9e8f24fb1f"
+      },
+      {
+        "version": "3.12.0-1.1.pre",
+        "released": "2023-06-21",
+        "framework_sha": "e2e0aa70372e5dd3408910eda69ab48f13cc06b4"
+      },
+      {
+        "version": "3.13.0-0.1.pre",
+        "released": "2023-07-12",
+        "framework_sha": "1f6bdb6fa288a8163813571573e517a47bc86264"
+      },
+      {
+        "version": "3.13.0-0.2.pre",
+        "released": "2023-07-19",
+        "framework_sha": "ac71592bc605996f9376ec5b7607db52b64cabd0"
+      },
+      {
+        "version": "3.13.0-0.3.pre",
+        "released": "2023-08-07",
+        "framework_sha": "e90f5d4561661f992387ca6187ff16504873334a"
+      },
+      {
+        "version": "3.13.0-0.4.pre",
+        "released": "2023-08-14",
+        "framework_sha": "7e07cd41cb78c1bb1199c458859c87ff818e1748"
+      },
+      {
+        "version": "3.14.0-0.1.pre",
+        "released": "2023-08-21",
+        "framework_sha": "120d54d33a22d18785c0110becdeb350c24a835d"
+      },
+      {
+        "version": "3.14.0-0.2.pre",
+        "released": "2023-09-01",
+        "framework_sha": "123453dc41ef48e717939dd3c012db6a23138895"
+      },
+      {
+        "version": "3.15.0-15.1.pre",
+        "released": "2023-09-15",
+        "framework_sha": "b2ec15bfa37e6ecdc1f68e7dc6960422648fc6d6"
+      },
+      {
+        "version": "3.15.0-15.2.pre",
+        "released": "2023-09-21",
+        "framework_sha": "0d074ced6cd64f39f586aaa115b2e4c993d74cb7"
+      },
+      {
+        "version": "3.16.0-0.1.pre",
+        "released": "2023-10-11",
+        "framework_sha": "f0abad66b249244cbdbb291cf6edfbba9937ffa0"
+      },
+      {
+        "version": "3.16.0-0.2.pre",
+        "released": "2023-10-12",
+        "framework_sha": "fe6553b689e4d2151b0f760ca06927fc284cc0a9"
+      },
+      {
+        "version": "3.16.0-0.3.pre",
+        "released": "2023-10-20",
+        "framework_sha": "476aa717cd342d11e16439b71f4f4c9209c50712"
+      },
+      {
+        "version": "3.16.0-0.4.pre",
+        "released": "2023-11-01",
+        "framework_sha": "379c3f4d37fb5870330e78a0863b2ed7cd643d7d"
+      },
+      {
+        "version": "3.16.0-0.5.pre",
+        "released": "2023-11-08",
+        "framework_sha": "adc7dfe87ebc5ff6cb6ceb786efaa83058fdc1a1"
+      },
+      {
+        "version": "3.17.0-0.0.pre",
+        "released": "2023-11-15",
+        "framework_sha": "0b591f2c82e9f59276ed68c7d4cbd63196f7c865"
+      },
+      {
+        "version": "3.17.0-0.0.pre",
+        "released": "2023-11-29",
+        "framework_sha": "12b47270b7a705f4dc7fe7a899acc2f7b5fdb63b"
+      },
+      {
+        "version": "3.18.0-0.1.pre",
+        "released": "2023-12-05",
+        "framework_sha": "593a031efb1e54aef4d083fc810482c2877ba1d2"
+      },
+      {
+        "version": "3.18.0-0.2.pre",
+        "released": "2023-12-14",
+        "framework_sha": "fed06b31d938f7620ea7417295b8d8d19cf7cf1d"
+      },
+      {
+        "version": "3.19.0-0.1.pre",
+        "released": "2024-01-10",
+        "framework_sha": "1a9a60d0441c5866467fb0b87909fe52cfbae6fe"
+      },
+      {
+        "version": "3.19.0-0.2.pre",
+        "released": "2024-01-18",
+        "framework_sha": "c1df7d07ac60336309bae9dd2d48e7cb8844ec98"
+      },
+      {
+        "version": "3.19.0-0.3.pre",
+        "released": "2024-01-26",
+        "framework_sha": "1b197762c51e993cb77d7fafe9729ef2506e2bf7"
+      },
+      {
+        "version": "3.19.0-0.4.pre",
+        "released": "2024-02-02",
+        "framework_sha": "b7e7d46a046ba8a22897a514bf2311a0f81ab198"
+      },
+      {
+        "version": "3.20.0-1.1.pre",
+        "released": "2024-02-15",
+        "framework_sha": "d7e373c6c24efcc9781ff1365ce6336a20d15804"
+      },
+      {
+        "version": "3.20.0-1.2.pre",
+        "released": "2024-02-22",
+        "framework_sha": "1751123cde4ffad08ae27bdee4f8ddebd033fe76"
+      },
+      {
+        "version": "3.21.0-0.0.pre",
+        "released": "2024-03-13",
+        "framework_sha": "c398442c35db146256911e3745736fa0d3d0437b"
+      },
+      {
+        "version": "3.22.0-0.1.pre",
+        "released": "2024-04-04",
+        "framework_sha": "29babcb32a591b9e5be8c6a6075d4fe605d46ad3"
+      },
+      {
+        "version": "3.22.0-0.2.pre",
+        "released": "2024-04-19",
+        "framework_sha": "312b9e81e93663b38f8e58d540be860fc75372b9"
+      },
+      {
+        "version": "3.22.0-0.3.pre",
+        "released": "2024-04-24",
+        "framework_sha": "87b652410dbf20003c437ab6512118622d95770f"
+      },
+      {
+        "version": "3.23.0-0.1.pre",
+        "released": "2024-06-06",
+        "framework_sha": "2feea7a4071e25c1e3aac9c17016531bc4442f2a"
+      },
+      {
+        "version": "3.24.0-0.1.pre",
+        "released": "2024-07-24",
+        "framework_sha": "b864805a681ae6bb7d7f6cafb7a5a21489819bcf"
+      },
+      {
+        "version": "3.24.0-0.2.pre",
+        "released": "2024-07-30",
+        "framework_sha": "7c6b7e9ca485f7eaaed913c6bb50f4be6da47e30"
+      },
+      {
+        "version": "3.25.0-0.1.pre",
+        "released": "2024-08-21",
+        "framework_sha": "d3733fcb0ecb65cc845b3426bd32ecc1323db1cd"
+      },
+      {
+        "version": "3.26.0-0.1.pre",
+        "released": "2024-09-11",
+        "framework_sha": "ee624bc4fd41413cbb89099b0701a42287643d9a"
+      },
+      {
+        "version": "3.27.0-0.1.pre",
+        "released": "2024-10-22",
+        "framework_sha": "2e2c358c9b14765c90343af9df11e12c5dfc3e6c"
+      },
+      {
+        "version": "3.27.0-0.2.pre",
+        "released": "2024-11-14",
+        "framework_sha": "fc011960a2b3260d49b64823b90fe292440c78ee"
+      },
+      {
+        "version": "3.28.0-0.1.pre",
+        "released": "2024-12-12",
+        "framework_sha": "3e493a3e4d0a5c99fa7da51faae354e95a9a1abe"
+      },
+      {
+        "version": "3.29.0-0.2.pre",
+        "released": "2025-01-27",
+        "framework_sha": "45459707c029b168a61dcde1f1c1d64df9d529af"
+      },
+      {
+        "version": "3.29.0-0.3.pre",
+        "released": "2025-02-03",
+        "framework_sha": "c21336e2277f34cdfd2a06ef1a59b7ba241129dc"
+      },
+      {
+        "version": "3.30.0-0.1.pre",
+        "released": "2025-02-19",
+        "framework_sha": "360a12c8481dccbfcab0a2a6704445e08454ef9e"
+      },
+      {
+        "version": "3.31.0-0.1.pre",
+        "released": "2025-03-17",
+        "framework_sha": "fce807530a201ddbd18d66be2b3295bbe209f389"
+      },
+      {
+        "version": "3.32.0-0.1.pre",
+        "released": "2025-04-14",
+        "framework_sha": "eeb81b9a8a680295cbd9684d3487954d68fe1236"
+      },
+      {
+        "version": "3.32.0-0.2.pre",
+        "released": "2025-04-21",
+        "framework_sha": "d3abd00e69a89a615e13969c02832ef1e0119639"
+      },
+      {
+        "version": "3.32.0-0.3.pre",
+        "released": "2025-04-30",
+        "framework_sha": "3bd718ee44049e25d33327ee9886ec30c97ffa33"
+      },
+      {
+        "version": "3.32.0-0.4.pre",
+        "released": "2025-05-12",
+        "framework_sha": "dbc3660e848145748d81e3c81795571f36307a29"
+      },
+      {
+        "version": "3.32.0-0.5.pre",
+        "released": "2025-05-16",
+        "framework_sha": "48ea72a87d7fc69d73aa2531ded8a5da9d13b2bd"
+      },
+      {
+        "version": "3.33.0-0.1.pre",
+        "released": "2025-05-22",
+        "framework_sha": "678de86f0b063861f92d8f43d69cf2dfe5a9527d"
+      },
+      {
+        "version": "3.33.0-0.2.pre",
+        "released": "2025-05-29",
+        "framework_sha": "1db45f74082217508069268b2f66801ca87e8a9b"
+      },
+      {
+        "version": "3.34.0-0.0.pre",
+        "released": "2025-06-17",
+        "framework_sha": "01fde956f0d13551843a44ae16eda7ca87478603"
+      },
+      {
+        "version": "3.34.0-0.1.pre",
+        "released": "2025-06-26",
+        "framework_sha": "eb3ca2517147b765887a1f16115add47e4ddbb35"
+      },
+      {
+        "version": "3.35.0-0.0.pre",
+        "released": "2025-07-16",
+        "framework_sha": "d86b4e9fd56486284d99440cd6018257d5f39fe4"
+      },
+      {
+        "version": "3.35.0-0.1.pre",
+        "released": "2025-07-21",
+        "framework_sha": "c0f2a1dd60414de7bef59318dc2554a6bb75d4ad"
+      },
+      {
+        "version": "3.35.0-0.2.pre",
+        "released": "2025-08-04",
+        "framework_sha": "26b84dd770917c2f8d959f3530d7a83be080bca3"
+      },
+      {
+        "version": "3.35.0-0.3.pre",
+        "released": "2025-08-11",
+        "framework_sha": "24a5c775548b08184bc5eb7c5a05cce9f3e8f554"
+      },
+      {
+        "version": "3.36.0-0.1.pre",
+        "released": "2025-08-14",
+        "framework_sha": "c84cdd0d0b582d1b65028a05bb39ba5f0a1599c2"
+      },
+      {
+        "version": "3.36.0-0.2.pre",
+        "released": "2025-08-26",
+        "framework_sha": "452c427043305a0d0df5139c05287a593228fef3"
+      },
+      {
+        "version": "3.36.0-0.4.pre",
+        "released": "2025-08-28",
+        "framework_sha": "27795a80021ef03a959cf7228e77da5fc50cf63c"
+      },
+      {
+        "version": "3.36.0-0.3.pre",
+        "released": "2025-08-28",
+        "framework_sha": "6c794842101b5805e74774cce9f1fdb49cbcd13c"
+      },
+      {
+        "version": "3.37.0-0.0.pre",
+        "released": "2025-09-08",
+        "framework_sha": "155e144f0f54573f29715e60f319b11c637787cf"
+      },
+      {
+        "version": "3.37.0-0.1.pre",
+        "released": "2025-09-17",
+        "framework_sha": "465e421f53c05f8f33f83a243c10c55f9f6efbc2"
+      },
+      {
+        "version": "3.38.0-0.1.pre",
+        "released": "2025-10-20",
+        "framework_sha": "7e592fef326466f8faafa664eac2912bb0b91fd5"
+      },
+      {
+        "version": "3.38.0-0.2.pre",
+        "released": "2025-10-29",
+        "framework_sha": "f16b4ff8921f452da733f17b243f627d08f1e378"
+      },
+      {
+        "version": "3.39.0-0.1.pre",
+        "released": "2025-11-12",
+        "framework_sha": "cbb46938eea8d29b761fbfd14b4554f10c9fd825"
+      }
+    ],
+    "dev": [
+      {
+        "version": "v0.1.6",
+        "released": "2018-02-27",
+        "framework_sha": "1f3eb5034ff2372956620b2a9eb88683eee9495e"
+      },
+      {
+        "version": "v0.1.8",
+        "released": "2018-03-06",
+        "framework_sha": "6993b203c05477fec537f566be7ff7fbf072d33b"
+      },
+      {
+        "version": "v0.2.0",
+        "released": "2018-03-07",
+        "framework_sha": "f8ac23cd8646538634f63032df4bfaf3b597007d"
+      },
+      {
+        "version": "v0.1.9",
+        "released": "2018-03-07",
+        "framework_sha": "70f60b17d7de9844c356fb7ab0e2cf1630a70965"
+      },
+      {
+        "version": "v0.2.1",
+        "released": "2018-03-12",
+        "framework_sha": "6f5bcb97a43e45b302b6b8d9eb5ef9d54f09515e"
+      },
+      {
+        "version": "v0.2.2",
+        "released": "2018-03-16",
+        "framework_sha": "b9bd51cc36b706215915711e580851901faebb40"
+      },
+      {
+        "version": "v0.2.3",
+        "released": "2018-03-20",
+        "framework_sha": "5a58b36e36b8d7aace89d3950e6deb307956a6a0"
+      },
+      {
+        "version": "v0.2.4",
+        "released": "2018-03-26",
+        "framework_sha": "3352a3fb488df4742ff323243d3dc44d9b7cd3e8"
+      },
+      {
+        "version": "v0.2.6",
+        "released": "2018-03-30",
+        "framework_sha": "1d067220daa06be91956de1130d93e63fb2f1a5a"
+      },
+      {
+        "version": "v0.2.5",
+        "released": "2018-03-30",
+        "framework_sha": "bffae2157102dd75a625153d3dc866d3de69c853"
+      },
+      {
+        "version": "v0.2.7",
+        "released": "2018-04-02",
+        "framework_sha": "0c89920069320b75d1fa4a47d36b2c48cf85697c"
+      },
+      {
+        "version": "v0.2.8",
+        "released": "2018-04-03",
+        "framework_sha": "b397406561f5e7a9c94e28f58d9e49fca0dd58b7"
+      },
+      {
+        "version": "v0.2.9",
+        "released": "2018-04-05",
+        "framework_sha": "487e6bc91efd3b8ef859a31963b26e19d12ca6fa"
+      },
+      {
+        "version": "v0.2.10",
+        "released": "2018-04-09",
+        "framework_sha": "d6d874474b21b512aac03f1dcd0d3b88835cdcdd"
+      },
+      {
+        "version": "v0.2.11",
+        "released": "2018-04-12",
+        "framework_sha": "f408bb06f9361793ca85493c38d809ee1e2f7e30"
+      },
+      {
+        "version": "v0.3.0",
+        "released": "2018-04-16",
+        "framework_sha": "c73b8a7cf63455189e9dc005010f2c9b34497420"
+      },
+      {
+        "version": "v0.3.2",
+        "released": "2018-04-20",
+        "framework_sha": "44b7e7d3f42f050a79712daab253af06e9daf530"
+      },
+      {
+        "version": "v0.3.1",
+        "released": "2018-04-20",
+        "framework_sha": "12bbaba9ae044d0ea77da4dd5e4db15eed403f09"
+      },
+      {
+        "version": "v0.3.3",
+        "released": "2018-04-23",
+        "framework_sha": "a742b11a50ad5d70f44a219e4a29a9fb5ca80252"
+      },
+      {
+        "version": "v0.3.4",
+        "released": "2018-04-24",
+        "framework_sha": "c7ee37a0d88bb3d60ac0f70cf381cd2492baf5e4"
+      },
+      {
+        "version": "v0.3.5",
+        "released": "2018-04-25",
+        "framework_sha": "7ffcd3d22d7bc1222d53d6d3bb83f59891aac2c2"
+      },
+      {
+        "version": "v0.3.6",
+        "released": "2018-05-04",
+        "framework_sha": "be09a200ee19024db34257653b067dcf5b998dc2"
+      },
+      {
+        "version": "v0.4.0",
+        "released": "2018-05-07",
+        "framework_sha": "7984f6e043ee661b420e70c72241973c676034e5"
+      },
+      {
+        "version": "v0.4.2",
+        "released": "2018-05-09",
+        "framework_sha": "de332ec78292c2d79fdb76034328f902c9087ee9"
+      },
+      {
+        "version": "v0.4.1",
+        "released": "2018-05-09",
+        "framework_sha": "e8d08744683d25661c6150b3b247c049719e99ba"
+      },
+      {
+        "version": "v0.4.3",
+        "released": "2018-05-11",
+        "framework_sha": "f086a45f8259fa77ef931ad2bfbb630360a8f5a6"
+      },
+      {
+        "version": "v0.4.4",
+        "released": "2018-05-14",
+        "framework_sha": "f9bb4289e9fd861d70ae78bcc3a042ef1b35cc9d"
+      },
+      {
+        "version": "v0.5.0",
+        "released": "2018-05-29",
+        "framework_sha": "a863817c045396bad2830a80e722903154dda32b"
+      },
+      {
+        "version": "v0.5.1",
+        "released": "2018-05-30",
+        "framework_sha": "c7ea3ca377e909469c68f2ab878a5bc53d3cf66b"
+      },
+      {
+        "version": "v0.5.2",
+        "released": "2018-06-08",
+        "framework_sha": "0a26ac09703b92a939fe3340c0584657a1791566"
+      },
+      {
+        "version": "v0.5.4",
+        "released": "2018-06-11",
+        "framework_sha": "3019ad976d333cceb903b3f53885cd9ae678a622"
+      },
+      {
+        "version": "v0.5.3",
+        "released": "2018-06-11",
+        "framework_sha": "691cbee61343977c5fe09eef45694f0d755d2d1b"
+      },
+      {
+        "version": "v0.5.5",
+        "released": "2018-06-18",
+        "framework_sha": "020e0ef55ce73d94284db593f895bfc3a0b520e9"
+      },
+      {
+        "version": "v0.5.6",
+        "released": "2018-07-03",
+        "framework_sha": "472bbccf756e7954af2a81d2c8abc46d65a570af"
+      },
+      {
+        "version": "v0.5.7",
+        "released": "2018-07-16",
+        "framework_sha": "66091f969653fd3535b265ddcd87436901858a1d"
+      },
+      {
+        "version": "v0.5.8",
+        "released": "2018-08-10",
+        "framework_sha": "e4b989bf3dbefc61f11bce298d16f92ebd9cde41"
+      },
+      {
+        "version": "v0.6.0",
+        "released": "2018-08-20",
+        "framework_sha": "9299c02cf708497d6f72edda8efae0bb8340660e"
+      },
+      {
+        "version": "v0.6.2",
+        "released": "2018-08-21",
+        "framework_sha": "392a178169a9e620a5ae8e55c40d4276cddd3b36"
+      },
+      {
+        "version": "v0.6.1",
+        "released": "2018-08-21",
+        "framework_sha": "ad1eaff45ab97ab65e2dd5aba768d19a4b48d49b"
+      },
+      {
+        "version": "v0.7.0",
+        "released": "2018-08-22",
+        "framework_sha": "09fe34708f5767e3dac6b04943677d2d8962b78c"
+      },
+      {
+        "version": "v0.7.1",
+        "released": "2018-08-27",
+        "framework_sha": "3c624f8b2c578fe7c14ae1b2dec725e265891758"
+      },
+      {
+        "version": "v0.7.2",
+        "released": "2018-08-28",
+        "framework_sha": "f8a2fc7c287ea0f25bb893d56caa45302d22eed6"
+      },
+      {
+        "version": "v0.7.3",
+        "released": "2018-08-29",
+        "framework_sha": "3b309bda072a6b326e8aa4591a5836af600923ce"
+      },
+      {
+        "version": "v0.7.4",
+        "released": "2018-08-30",
+        "framework_sha": "ce51e71d19eeadaa079d70388a61f7ae710313f7"
+      },
+      {
+        "version": "v0.7.5",
+        "released": "2018-08-31",
+        "framework_sha": "eab5cd9853c13ec2207977d9b9ef7b6750fe0817"
+      },
+      {
+        "version": "v0.8.0",
+        "released": "2018-09-06",
+        "framework_sha": "a74f591d0c05f2173448b2b421785b8dc51e8370"
+      },
+      {
+        "version": "v0.8.1",
+        "released": "2018-09-07",
+        "framework_sha": "0235ec59d108f8b4f6c6a664cc11c56c11cbb50a"
+      },
+      {
+        "version": "v0.8.2",
+        "released": "2018-09-10",
+        "framework_sha": "5ab9e70727d858def3a586db7fb98ee580352957"
+      },
+      {
+        "version": "v0.8.4",
+        "released": "2018-09-14",
+        "framework_sha": "7f7a731da095addd1ce684a6a2f4bc8651229769"
+      },
+      {
+        "version": "v0.8.3",
+        "released": "2018-09-14",
+        "framework_sha": "2895d71b79b1482c8c1d1de387d04e2a5e667f1e"
+      },
+      {
+        "version": "v0.8.5",
+        "released": "2018-09-17",
+        "framework_sha": "2bca8007bd1962940fa3b3d568bc52e446005616"
+      },
+      {
+        "version": "v0.9.1",
+        "released": "2018-09-18",
+        "framework_sha": "bf7c27095cc4dc07c03d8a6ad2e9e0e28e26227e"
+      },
+      {
+        "version": "v0.9.0",
+        "released": "2018-09-18",
+        "framework_sha": "f8c50ea15f6a78fdb6fa038cf3fb70fb154714ef"
+      },
+      {
+        "version": "v0.8.7",
+        "released": "2018-09-18",
+        "framework_sha": "ccd070a5b42d18d1b8dfce4e8b59417373122dc2"
+      },
+      {
+        "version": "v0.8.6",
+        "released": "2018-09-18",
+        "framework_sha": "9f359aeee2a474fe9c565b3b59cf1d504b919b4d"
+      },
+      {
+        "version": "v0.9.2",
+        "released": "2018-09-19",
+        "framework_sha": "85b4670b2aee067838821d4c4020315c16e8930a"
+      },
+      {
+        "version": "v0.9.3",
+        "released": "2018-09-25",
+        "framework_sha": "eed8c7ad07a2ba90b0a57d0aa7cc6ebed1864ecd"
+      },
+      {
+        "version": "v0.9.4",
+        "released": "2018-09-27",
+        "framework_sha": "f37c235c32fc15babe6dc7b7bc2ee4387e5ecf92"
+      },
+      {
+        "version": "v0.9.5",
+        "released": "2018-09-28",
+        "framework_sha": "020fd590b032c403b82688933e67474215b1debc"
+      },
+      {
+        "version": "v0.9.6",
+        "released": "2018-10-04",
+        "framework_sha": "13684e4f8e9edb4c2b2a0fd8e1439f93e6e30fde"
+      },
+      {
+        "version": "v0.10.0",
+        "released": "2018-10-10",
+        "framework_sha": "d954ae6850a06ea461d5595cef424e278ed9f17f"
+      },
+      {
+        "version": "v0.10.1",
+        "released": "2018-10-20",
+        "framework_sha": "6a3ff018b199a7febbe2b5adbb564081d8f49e2f"
+      },
+      {
+        "version": "v0.10.2",
+        "released": "2018-11-01",
+        "framework_sha": "d8cbb80206db06d151206f8b599b7dde5a386a2d"
+      },
+      {
+        "version": "v0.11.0",
+        "released": "2018-11-08",
+        "framework_sha": "c319b890b33f2c15af043f2ab857e7c2944beefa"
+      },
+      {
+        "version": "v0.11.2",
+        "released": "2018-11-10",
+        "framework_sha": "e32cd85446c6fd5afdbe1ba463c18e2b2ee27781"
+      },
+      {
+        "version": "v0.11.1",
+        "released": "2018-11-10",
+        "framework_sha": "756d5938d4eb4ef1572075fae7744502d870c7ba"
+      },
+      {
+        "version": "v0.11.3",
+        "released": "2018-11-11",
+        "framework_sha": "72bf075e8d6961d2ca6df462b2228954f8d0e73a"
+      },
+      {
+        "version": "v0.11.4",
+        "released": "2018-11-13",
+        "framework_sha": "df57dc9da9905744fa0b49fe30254d6d7b204d5b"
+      },
+      {
+        "version": "v0.11.5",
+        "released": "2018-11-14",
+        "framework_sha": "97e03104a0913886a666a36f5d11ab5763d45e6e"
+      },
+      {
+        "version": "v0.11.6",
+        "released": "2018-11-15",
+        "framework_sha": "d44aa57c120c30d523c937a0455a6af30e743da9"
+      },
+      {
+        "version": "v0.11.7",
+        "released": "2018-11-19",
+        "framework_sha": "7a005e1dcda665ace7241a24e79fae1a71f17b18"
+      },
+      {
+        "version": "v0.11.8",
+        "released": "2018-11-20",
+        "framework_sha": "f5b02e3c05ed1ab31e890add84fb56e35de2d392"
+      },
+      {
+        "version": "v0.11.9",
+        "released": "2018-11-21",
+        "framework_sha": "d48e6e433cc5ca67b24b19f70aaa197e84ba63c1"
+      },
+      {
+        "version": "v0.11.10",
+        "released": "2018-11-27",
+        "framework_sha": "c27c4a265e9ad295e5d434cddabbc639b2e3542d"
+      },
+      {
+        "version": "v0.11.11",
+        "released": "2018-11-28",
+        "framework_sha": "e7680128afbbde443d69f89bb264015276a8475a"
+      },
+      {
+        "version": "v0.11.12",
+        "released": "2018-11-29",
+        "framework_sha": "06ec8d3b41beb469d845626e36a246ee09300fa7"
+      },
+      {
+        "version": "v0.11.13",
+        "released": "2018-11-30",
+        "framework_sha": "58c8489fcdb4e4ef6c010117584c9b23d15221aa"
+      },
+      {
+        "version": "v1.0.0",
+        "released": "2018-12-04",
+        "framework_sha": "5391447fae6209bb21a89e6a5a6583cac1af9b4b"
+      },
+      {
+        "version": "v1.1.0",
+        "released": "2018-12-12",
+        "framework_sha": "3cca1a2ec35604ca50f9c656b8e761b07a00a9ed"
+      },
+      {
+        "version": "v1.1.8",
+        "released": "2019-01-09",
+        "framework_sha": "985ccb6d14c6ce5ce74823a4d366df2438eac44f"
+      },
+      {
+        "version": "v1.2.0",
+        "released": "2019-01-31",
+        "framework_sha": "06b979c4d5e1b499745422269f01a00341257058"
+      },
+      {
+        "version": "v1.2.1",
+        "released": "2019-02-15",
+        "framework_sha": "8661d8aecd626f7f57ccbcb735553edc05a2e713"
+      },
+      {
+        "version": "v1.2.2",
+        "released": "2019-02-27",
+        "framework_sha": "007a415c2a2fa37e8fd5ad87d6710bca8e212ef1"
+      },
+      {
+        "version": "v1.3.0",
+        "released": "2019-02-28",
+        "framework_sha": "3054a935791bf0bcc34ba0a111df794ddb7a3589"
+      },
+      {
+        "version": "v1.3.2",
+        "released": "2019-03-01",
+        "framework_sha": "046f960ae210afc3887721b1b5aa1dbdab4105cb"
+      },
+      {
+        "version": "v1.3.1",
+        "released": "2019-03-01",
+        "framework_sha": "6ed9da35c3a4f6cc79d4f91bf850159908daad8e"
+      },
+      {
+        "version": "v1.3.3",
+        "released": "2019-03-04",
+        "framework_sha": "778e95a39b82688662e8be7cbe2deb31cad33203"
+      },
+      {
+        "version": "v1.3.4",
+        "released": "2019-03-05",
+        "framework_sha": "7fc14a55af64462763d28abfb4e610086c6e0f39"
+      },
+      {
+        "version": "v1.3.8",
+        "released": "2019-03-07",
+        "framework_sha": "e5b1ed7a7f7b85c1877e09a9495681f719be5578"
+      },
+      {
+        "version": "v1.3.7",
+        "released": "2019-03-07",
+        "framework_sha": "01a29b85eff7dd4b2d4958f61adf1840042471cc"
+      },
+      {
+        "version": "v1.3.6",
+        "released": "2019-03-07",
+        "framework_sha": "5099701f88f49ec12ebca676d8e61149917bde9c"
+      },
+      {
+        "version": "v1.3.9",
+        "released": "2019-03-10",
+        "framework_sha": "f91df4abe1427fef8862c9e81b2e5af6fc05a67a"
+      },
+      {
+        "version": "v1.3.10",
+        "released": "2019-03-15",
+        "framework_sha": "4feefa3c9a2176ca7383246c4c01b36254fbec85"
+      },
+      {
+        "version": "v1.3.11",
+        "released": "2019-03-18",
+        "framework_sha": "73fb457cae005cde3e351fc9e1ba1b43de458aad"
+      },
+      {
+        "version": "v1.3.13",
+        "released": "2019-03-19",
+        "framework_sha": "59ce7d6bff0d0626ae4b90787bf993ebcdc4b110"
+      },
+      {
+        "version": "v1.3.12",
+        "released": "2019-03-19",
+        "framework_sha": "a1bee54fda83026c01edd53ba32f01736b4ee4ad"
+      },
+      {
+        "version": "v1.4.0",
+        "released": "2019-03-26",
+        "framework_sha": "18a08a8f4f7bca0d25f34706ebc8af231f3db9d4"
+      },
+      {
+        "version": "v1.3.14",
+        "released": "2019-03-26",
+        "framework_sha": "8e7e435706553edea6d350c3843f1c0e5465a0d8"
+      },
+      {
+        "version": "v1.4.3",
+        "released": "2019-03-27",
+        "framework_sha": "64a28e3685bee310e697a91612d7e30d0426cda2"
+      },
+      {
+        "version": "v1.4.2",
+        "released": "2019-03-27",
+        "framework_sha": "141f87b32754267cc02bae03477c4b109b828324"
+      },
+      {
+        "version": "v1.4.1",
+        "released": "2019-03-27",
+        "framework_sha": "204eceea93694aa081e0132c8281b76d3b3d6b4a"
+      },
+      {
+        "version": "v1.4.5",
+        "released": "2019-03-28",
+        "framework_sha": "99866f4a3dd1bf860c846e10d02af9ad125f9fe1"
+      },
+      {
+        "version": "v1.4.4",
+        "released": "2019-03-28",
+        "framework_sha": "3b3f6c7a041978505b310b5b50390c2f5ff7eaac"
+      },
+      {
+        "version": "v1.4.7",
+        "released": "2019-03-29",
+        "framework_sha": "1bfa2f23114829513a9d2c0a7a27d743287acc2a"
+      },
+      {
+        "version": "v1.4.6-hotfix.1",
+        "released": "2019-03-29",
+        "framework_sha": "4ed13e022cae194aebdc9c5dfa6c2c3c62eeb8fb"
+      },
+      {
+        "version": "v1.4.6",
+        "released": "2019-03-29",
+        "framework_sha": "ec93c87c8902c63e5b0e71ff761f201d19dc4327"
+      },
+      {
+        "version": "v1.4.8",
+        "released": "2019-04-03",
+        "framework_sha": "fbefd6b816a846936dbba847ce85dc1ed55e3faa"
+      },
+      {
+        "version": "v1.4.10",
+        "released": "2019-04-04",
+        "framework_sha": "6ba720a4890bcffd0e48ec329318c929d517ce2c"
+      },
+      {
+        "version": "v1.4.9",
+        "released": "2019-04-04",
+        "framework_sha": "16a16e6598cca4129da0d2e76de0320fbc0108f1"
+      },
+      {
+        "version": "v1.4.11",
+        "released": "2019-04-08",
+        "framework_sha": "d15b3b1c8b0b4090fa1949b106dd3870d13341ca"
+      },
+      {
+        "version": "v1.4.12",
+        "released": "2019-04-09",
+        "framework_sha": "294d7ea0cf0c6ff84ba43682b1dddcee18bf4114"
+      },
+      {
+        "version": "v1.4.15",
+        "released": "2019-04-10",
+        "framework_sha": "ed91a3be49232c336ab2cf7a3376958cb3d537d2"
+      },
+      {
+        "version": "v1.4.14",
+        "released": "2019-04-10",
+        "framework_sha": "5a4eaabaf1c0b00f8cf9ace3c63066f754facc94"
+      },
+      {
+        "version": "v1.4.13",
+        "released": "2019-04-10",
+        "framework_sha": "514aba6e36d4c9429d307e643dde3398802ca56a"
+      },
+      {
+        "version": "v1.4.17",
+        "released": "2019-04-11",
+        "framework_sha": "ecb468f33587bad108034c1bbe21e8cbd0d94acc"
+      },
+      {
+        "version": "v1.4.16",
+        "released": "2019-04-11",
+        "framework_sha": "d2790bd2bbf1851db2359026df7bca38e255b9d3"
+      },
+      {
+        "version": "v1.4.18",
+        "released": "2019-04-12",
+        "framework_sha": "8bea3fb2ebadc3933b6b213483d2d4379ac53a5c"
+      },
+      {
+        "version": "v1.5.0",
+        "released": "2019-04-16",
+        "framework_sha": "a18226d06619ca1d61e453205fa89bc646c3d0fc"
+      },
+      {
+        "version": "v1.5.2",
+        "released": "2019-04-17",
+        "framework_sha": "efe744a3609d0b8e218b5d9d13823ed394261bb5"
+      },
+      {
+        "version": "v1.5.1",
+        "released": "2019-04-17",
+        "framework_sha": "0f5de8725e0f6778406fb5156aee1486d39771f6"
+      },
+      {
+        "version": "v1.5.3",
+        "released": "2019-04-19",
+        "framework_sha": "80971335c1ee259717076c1e9d308a9572f85259"
+      },
+      {
+        "version": "v1.5.4",
+        "released": "2019-04-22",
+        "framework_sha": "b593f5167bce84fb3cad5c258477bf3abc1b14eb"
+      },
+      {
+        "version": "v1.5.5",
+        "released": "2019-04-23",
+        "framework_sha": "5c5ddd1fc22de7df08a6bc0e18b4ec345d702fbd"
+      },
+      {
+        "version": "v1.5.7",
+        "released": "2019-04-24",
+        "framework_sha": "96f15c74adebb221eb044d3fc71b2d62da0046c0"
+      },
+      {
+        "version": "v1.5.6",
+        "released": "2019-04-24",
+        "framework_sha": "e00f1a3c17f65a751c14b821235e5c2875948ff0"
+      },
+      {
+        "version": "v1.5.8",
+        "released": "2019-04-26",
+        "framework_sha": "0ba67226ee62d6c9d663a6f8410fb4b2f1076046"
+      },
+      {
+        "version": "v1.6.0",
+        "released": "2019-05-17",
+        "framework_sha": "ed90d05596d85b0ec8e841395bce9d3b6edea134"
+      },
+      {
+        "version": "v1.6.1",
+        "released": "2019-05-22",
+        "framework_sha": "d31ce31a274ee721f4e9b54c6dcc2de0b3fd71e4"
+      },
+      {
+        "version": "v1.6.2",
+        "released": "2019-05-23",
+        "framework_sha": "cb576181e9549bdd9d845394b1b5feab1b93807d"
+      },
+      {
+        "version": "v1.6.3",
+        "released": "2019-05-24",
+        "framework_sha": "bc7bc940836f1f834699625426795fd6f07c18ec"
+      },
+      {
+        "version": "v1.6.5",
+        "released": "2019-05-28",
+        "framework_sha": "7c811b6a66bcbab62f87c8768decc449027e5190"
+      },
+      {
+        "version": "v1.6.4",
+        "released": "2019-05-28",
+        "framework_sha": "0f6e4e6190d1c128b8baadd2dee3b2a8923d3f86"
+      },
+      {
+        "version": "v1.6.6",
+        "released": "2019-05-29",
+        "framework_sha": "e1a784ae3f82948c33c256666c73680420f11350"
+      },
+      {
+        "version": "v1.6.7",
+        "released": "2019-05-31",
+        "framework_sha": "cba41ca2ec977888806a9a02fc06c459f7a806ae"
+      },
+      {
+        "version": "v1.7.0",
+        "released": "2019-06-03",
+        "framework_sha": "f36a35d20ac5dc2936cab6ccc60f5d9afa34466e"
+      },
+      {
+        "version": "v1.7.1",
+        "released": "2019-06-04",
+        "framework_sha": "04015b987b8b9ccb4b428decadf2b9f5cd25dc91"
+      },
+      {
+        "version": "v1.7.2",
+        "released": "2019-06-06",
+        "framework_sha": "b3b6d03737bd3f61209570e86f2b045c80f35c44"
+      },
+      {
+        "version": "v1.7.3",
+        "released": "2019-06-07",
+        "framework_sha": "362b999b90d53859aa7b926a59c970f3ea31abf4"
+      },
+      {
+        "version": "v1.7.4",
+        "released": "2019-06-14",
+        "framework_sha": "dfecafa4ab30f9c509ce409241000cdd785ef23d"
+      },
+      {
+        "version": "v1.7.6",
+        "released": "2019-06-21",
+        "framework_sha": "63438b924497ed9479f4c69a03d399bcbc2b4781"
+      },
+      {
+        "version": "v1.7.8",
+        "released": "2019-06-22",
+        "framework_sha": "d51fd86cdb486192e187ccdf6f02cb2a38273d8d"
+      },
+      {
+        "version": "v1.7.7",
+        "released": "2019-06-22",
+        "framework_sha": "363052567376976b68bc995905397156fc5a28a0"
+      },
+      {
+        "version": "v1.7.9",
+        "released": "2019-06-25",
+        "framework_sha": "8dbfc82bc7f94c721efaeff904b4388d222c7919"
+      },
+      {
+        "version": "v1.7.10",
+        "released": "2019-06-26",
+        "framework_sha": "9a3a7490c8ded5f13d4fce2e493df2a63d602e57"
+      },
+      {
+        "version": "v1.7.11",
+        "released": "2019-06-28",
+        "framework_sha": "43b03127d469f1f6d9a22f8dae41eea2eed2afd9"
+      },
+      {
+        "version": "v1.8.1",
+        "released": "2019-07-11",
+        "framework_sha": "d3eee57c0bd2e19aaa944be07b24c533075fd1a0"
+      },
+      {
+        "version": "v1.8.2",
+        "released": "2019-07-19",
+        "framework_sha": "0a39d8d92ed43a0b7efcc93742a17660a14d78aa"
+      },
+      {
+        "version": "v1.8.3",
+        "released": "2019-07-31",
+        "framework_sha": "e4ebcdf6f4facee5779c38a04d91d08dc58ea7a4"
+      },
+      {
+        "version": "v1.8.4",
+        "released": "2019-08-07",
+        "framework_sha": "954714c9674af0da6530795407fc66179fdaef88"
+      },
+      {
+        "version": "v1.9.0",
+        "released": "2019-08-15",
+        "framework_sha": "760635e6dbf9180222171ac189199982a65cf608"
+      },
+      {
+        "version": "v1.9.2",
+        "released": "2019-08-21",
+        "framework_sha": "6815f540c996b5baf559ef075a906ab1bec05a18"
+      },
+      {
+        "version": "v1.9.1",
+        "released": "2019-08-21",
+        "framework_sha": "c382b8e990b6976f610764179f94e0416d82c057"
+      },
+      {
+        "version": "v1.9.3",
+        "released": "2019-08-22",
+        "framework_sha": "f515bf6abc909fddca311dca78837ce478e571aa"
+      },
+      {
+        "version": "v1.9.4",
+        "released": "2019-08-23",
+        "framework_sha": "cf87f68fd08d697273c780d09fc647616749e8b1"
+      },
+      {
+        "version": "v1.9.5",
+        "released": "2019-08-24",
+        "framework_sha": "365f577c707b092f9b97b62b0cdb331c2d7fcf75"
+      },
+      {
+        "version": "v1.9.7",
+        "released": "2019-08-29",
+        "framework_sha": "4984d1a33dd6de2862578e3f08b4ca7dfce7d54b"
+      },
+      {
+        "version": "v1.9.6",
+        "released": "2019-08-29",
+        "framework_sha": "35de8d527842f99e30240a7fbf08cd4638ba7a5d"
+      },
+      {
+        "version": "v1.10.0",
+        "released": "2019-09-06",
+        "framework_sha": "3932ffb1cd5dfa0c3891c60977ee4f9cd70ade66"
+      },
+      {
+        "version": "v1.10.1",
+        "released": "2019-09-09",
+        "framework_sha": "ce45c2d3e6f02022f73bd3804775cb9a89c08b49"
+      },
+      {
+        "version": "v1.10.2",
+        "released": "2019-09-14",
+        "framework_sha": "f5733f7a62ebc7c2ba324a2b410cd81215956b7d"
+      },
+      {
+        "version": "v1.10.3",
+        "released": "2019-09-17",
+        "framework_sha": "2f3515de31c0479cd09ad11cdc079281270405f4"
+      },
+      {
+        "version": "v1.10.5",
+        "released": "2019-09-19",
+        "framework_sha": "3cf88fed6d9b016f83a4920a5db524bf5a2d2b64"
+      },
+      {
+        "version": "v1.10.4",
+        "released": "2019-09-19",
+        "framework_sha": "0b24a5a2ff9eccfba77bb68a0abcf1b7f0ae5b37"
+      },
+      {
+        "version": "v1.10.6",
+        "released": "2019-09-25",
+        "framework_sha": "cc3ca9a916cb1da851a1f36432154a534787da99"
+      },
+      {
+        "version": "v1.10.7",
+        "released": "2019-10-02",
+        "framework_sha": "e70236e36ce1d32067dc68eb55519ec3e14b6b01"
+      },
+      {
+        "version": "v1.10.12",
+        "released": "2019-10-04",
+        "framework_sha": "0e605cc4dd83137f785769dea5e8ae7da1afb361"
+      },
+      {
+        "version": "v1.10.11",
+        "released": "2019-10-04",
+        "framework_sha": "5961bcc505b589328c3c20f0841ba467db3f966a"
+      },
+      {
+        "version": "v1.10.10",
+        "released": "2019-10-04",
+        "framework_sha": "3a728a9b5b14e2390965be0e1e0215ef583716e2"
+      },
+      {
+        "version": "v1.10.9",
+        "released": "2019-10-04",
+        "framework_sha": "3e2dc8ca7b59080cef04a9ff474b5b18d94e4365"
+      },
+      {
+        "version": "v1.10.8",
+        "released": "2019-10-04",
+        "framework_sha": "0b0942a60caafff56c19fea07d8f7b14e6286e1c"
+      },
+      {
+        "version": "v1.10.14",
+        "released": "2019-10-08",
+        "framework_sha": "1946fc4da0f80c522d7e3ae7d4f7309908ed86f2"
+      },
+      {
+        "version": "v1.10.13",
+        "released": "2019-10-08",
+        "framework_sha": "97e00b2288938998f755c5262a118d9a0d6a915a"
+      },
+      {
+        "version": "v1.10.15",
+        "released": "2019-11-07",
+        "framework_sha": "fbabb264e0ab3e090d6ec056e0744aaeb1586735"
+      },
+      {
+        "version": "v1.10.16",
+        "released": "2019-11-11",
+        "framework_sha": "798e4272a2e43d7daab75f225a13442e384ee0cd"
+      },
+      {
+        "version": "v1.11.0",
+        "released": "2019-11-13",
+        "framework_sha": "856a90e67c9284124d44d2be6c785bacd3a1c772"
+      },
+      {
+        "version": "v1.12.0",
+        "released": "2019-11-14",
+        "framework_sha": "9323a623bd83f0bb994f50086344fb8933e05081"
+      },
+      {
+        "version": "v1.12.2",
+        "released": "2019-11-15",
+        "framework_sha": "6de62679421abe42f0f669e191fead30ee8bf7e0"
+      },
+      {
+        "version": "v1.12.1",
+        "released": "2019-11-15",
+        "framework_sha": "86c91b12d88934886b35887ec23068c1eeee5624"
+      },
+      {
+        "version": "v1.12.4",
+        "released": "2019-11-18",
+        "framework_sha": "2461c75600ba6e11a49da0fca29abe3b4501efcd"
+      },
+      {
+        "version": "v1.12.3",
+        "released": "2019-11-18",
+        "framework_sha": "028b4c4f40e4c2035961cbc35ab7b49fe48320d8"
+      },
+      {
+        "version": "v1.12.7",
+        "released": "2019-11-21",
+        "framework_sha": "43a8a1902e5c42d084077e8ede6f14f8ddbdce24"
+      },
+      {
+        "version": "v1.12.6",
+        "released": "2019-11-21",
+        "framework_sha": "6eb0a0e3715c6eeb7a2733f74cf6e741fe796ef6"
+      },
+      {
+        "version": "v1.12.5",
+        "released": "2019-11-21",
+        "framework_sha": "2c7af1e24e45a79f4eb73d67d98fcecea8bf6146"
+      },
+      {
+        "version": "v1.12.9",
+        "released": "2019-11-22",
+        "framework_sha": "33d302240d3e483fc78bf6abb43d8346260b60c5"
+      },
+      {
+        "version": "v1.12.11",
+        "released": "2019-11-23",
+        "framework_sha": "f40dbf8ca07b0498eff3d6b861ecd21f2de7db6a"
+      },
+      {
+        "version": "v1.12.10",
+        "released": "2019-11-23",
+        "framework_sha": "b6e92003c8abc5e04a193b58e4a7c8b98d4b8536"
+      },
+      {
+        "version": "v1.12.12",
+        "released": "2019-11-25",
+        "framework_sha": "bae92c32e5233e9113e42962179773309fb3ad8c"
+      },
+      {
+        "version": "v1.12.14",
+        "released": "2019-11-26",
+        "framework_sha": "7726910a5bc4135a9f1fd497c872c9e5cb1e51b5"
+      },
+      {
+        "version": "v1.12.13",
+        "released": "2019-11-26",
+        "framework_sha": "cf37c2cd07a1d3ba296efff2dc75e19ba65e1665"
+      },
+      {
+        "version": "v1.12.15",
+        "released": "2019-11-27",
+        "framework_sha": "459c7fb884d9234c45b353087e0ec8a33dde90d1"
+      },
+      {
+        "version": "v1.12.16",
+        "released": "2019-12-02",
+        "framework_sha": "37f9c541165c3516f727cd36bd502d411fdad3b8"
+      },
+      {
+        "version": "v1.13.0",
+        "released": "2019-12-05",
+        "framework_sha": "09126abb222d0f25b03318a1ab4a99d27d9aaa8d"
+      },
+      {
+        "version": "v1.13.1",
+        "released": "2019-12-12",
+        "framework_sha": "4938ea03858e178541d723dff430e6c9d044e6ae"
+      },
+      {
+        "version": "v1.13.2",
+        "released": "2019-12-13",
+        "framework_sha": "4944622b5d8e7a8ee5dbf658b0d0e8ab94b8efd3"
+      },
+      {
+        "version": "v1.13.3",
+        "released": "2019-12-19",
+        "framework_sha": "4af66e335f8d87da5cb8c7f2a3e89c1ee02ef23b"
+      },
+      {
+        "version": "v1.13.4",
+        "released": "2019-12-20",
+        "framework_sha": "bd25f70c66ccd832d53644bd33a1368e96a7aa75"
+      },
+      {
+        "version": "v1.13.5",
+        "released": "2019-12-21",
+        "framework_sha": "41a911099b7d06f7b1c29f4420cfcfe41fd26e46"
+      },
+      {
+        "version": "v1.13.6",
+        "released": "2020-01-02",
+        "framework_sha": "659dc8129d4edb9166e9a0d600439d135740933f"
+      },
+      {
+        "version": "v1.13.7",
+        "released": "2020-01-07",
+        "framework_sha": "a3bbdfb23acb173b1bac7cbcd7c4ac723eb584b9"
+      },
+      {
+        "version": "v1.13.8",
+        "released": "2020-01-10",
+        "framework_sha": "1c79347ef659402a17bf9405b3305564530d3bd2"
+      },
+      {
+        "version": "v1.13.9",
+        "released": "2020-01-14",
+        "framework_sha": "d291de086c0840eb63d82bcde11af2ec521e2a0c"
+      },
+      {
+        "version": "v1.14.0",
+        "released": "2020-01-15",
+        "framework_sha": "bc6f270c584d1fdba81330090ef6e822b9082919"
+      },
+      {
+        "version": "v1.14.1",
+        "released": "2020-01-16",
+        "framework_sha": "c88320458ea86da379aec43dcd24057ad1d79652"
+      },
+      {
+        "version": "v1.14.2",
+        "released": "2020-01-21",
+        "framework_sha": "ec1044a8773e31b4630bf162d9c374236ad1eaaf"
+      },
+      {
+        "version": "v1.14.3",
+        "released": "2020-01-22",
+        "framework_sha": "b5a23fdf5bc01e292238627f031a34ed0adb80b0"
+      },
+      {
+        "version": "v1.14.4",
+        "released": "2020-01-25",
+        "framework_sha": "5e1000cd8540a6305df5a999d4dcb0b59fe3c66a"
+      },
+      {
+        "version": "v1.14.5",
+        "released": "2020-01-27",
+        "framework_sha": "92cbaa3efe985cc8370d0d70fef5058c971b2eee"
+      },
+      {
+        "version": "v1.14.6",
+        "released": "2020-01-29",
+        "framework_sha": "fabeb2a16f1d008ab8230f450c49141d35669798"
+      },
+      {
+        "version": "v1.15.1",
+        "released": "2020-02-06",
+        "framework_sha": "4d2ce7be2cd4622cede017b0fe2b8a66c821fe48"
+      },
+      {
+        "version": "v1.15.0",
+        "released": "2020-02-06",
+        "framework_sha": "9b3e1639db189866af55ed3a0dfd47b217106fcd"
+      },
+      {
+        "version": "v1.15.2",
+        "released": "2020-02-07",
+        "framework_sha": "d94ff4bdbec7f1141d16cf97d3ceed485c9a1d36"
+      },
+      {
+        "version": "v1.15.3",
+        "released": "2020-02-11",
+        "framework_sha": "67826bdce54505760fe83b7ead70bdb5af6fe9f2"
+      },
+      {
+        "version": "v1.15.5",
+        "released": "2020-03-04",
+        "framework_sha": "cbbb7ec5a7031187cc906ac9f375f340c16d51af"
+      },
+      {
+        "version": "v1.15.4",
+        "released": "2020-03-04",
+        "framework_sha": "a5bd678585ceda542205a54d6e650b1b4297bd0a"
+      },
+      {
+        "version": "v1.15.12",
+        "released": "2020-03-05",
+        "framework_sha": "b127868db4944013c65232af46ce02d5b5bde93e"
+      },
+      {
+        "version": "v1.15.11",
+        "released": "2020-03-05",
+        "framework_sha": "1dce0a51e613df290b894e28e6a7d44f5fd87eb1"
+      },
+      {
+        "version": "v1.15.10",
+        "released": "2020-03-05",
+        "framework_sha": "3018d8ddb3b40156b6d5a32ee4deaaa80277ea71"
+      },
+      {
+        "version": "v1.15.9",
+        "released": "2020-03-05",
+        "framework_sha": "cc52a903a8639a8f59e84942172456629eb1aa8f"
+      },
+      {
+        "version": "v1.15.8",
+        "released": "2020-03-05",
+        "framework_sha": "83dba9bc16be4aba56df6c5752f91e777d4331d6"
+      },
+      {
+        "version": "v1.15.7",
+        "released": "2020-03-05",
+        "framework_sha": "db94472aeb03eb91e833686223e8d930eb8e8d45"
+      },
+      {
+        "version": "v1.15.6",
+        "released": "2020-03-05",
+        "framework_sha": "0b8129db1f6b01924c82f3acccc498108c0e1ff4"
+      },
+      {
+        "version": "v1.15.18",
+        "released": "2020-03-06",
+        "framework_sha": "9437639590adaa91e3df31cd9ce85133e401cd51"
+      },
+      {
+        "version": "v1.15.17",
+        "released": "2020-03-06",
+        "framework_sha": "2294d75bfa8d067ba90230c0fc2268f3636d7584"
+      },
+      {
+        "version": "v1.15.16",
+        "released": "2020-03-06",
+        "framework_sha": "fc3f03886dd715dda8e640e0b8bf3871213c1420"
+      },
+      {
+        "version": "v1.15.15",
+        "released": "2020-03-06",
+        "framework_sha": "ed94c9d856c8de67f183d8ac18b06f61f5405219"
+      },
+      {
+        "version": "v1.15.14",
+        "released": "2020-03-06",
+        "framework_sha": "a68f96ae3f51c0339477f8b4711ba1f11daffb71"
+      },
+      {
+        "version": "v1.15.13",
+        "released": "2020-03-06",
+        "framework_sha": "92ce53cc6e9e85e8a9f3f496c8318e556ca8f974"
+      },
+      {
+        "version": "v1.15.19",
+        "released": "2020-03-10",
+        "framework_sha": "60d0fef17ae60b88cb52e6158bda2d91b600299c"
+      },
+      {
+        "version": "v1.15.20",
+        "released": "2020-03-11",
+        "framework_sha": "4049889d9eecc8fb3eda316a5c371eeb636b2ae5"
+      },
+      {
+        "version": "v1.15.21",
+        "released": "2020-03-13",
+        "framework_sha": "e2b4edd2865794e4ce9d4e8c40d732ed14eb6fa1"
+      },
+      {
+        "version": "v1.15.22",
+        "released": "2020-03-16",
+        "framework_sha": "1606d878348e98fb1c401679ca8e006c7b7eb41f"
+      },
+      {
+        "version": "v1.16.0",
+        "released": "2020-03-18",
+        "framework_sha": "08768e87e408fd3df8f848b468b876fef1a49f76"
+      },
+      {
+        "version": "v1.16.1",
+        "released": "2020-03-19",
+        "framework_sha": "e6b0f5f238d7c67a686e54d09c91e654fa8f215d"
+      },
+      {
+        "version": "v1.16.2",
+        "released": "2020-03-24",
+        "framework_sha": "58cad787d89cc12e72f1f0ec3f1df6a9796ef029"
+      },
+      {
+        "version": "v1.16.3",
+        "released": "2020-03-27",
+        "framework_sha": "be3a4b37b3e9ab4e80d45b59bed53708b96d211f"
+      },
+      {
+        "version": "1.17.0-dev.0.0",
+        "released": "2020-03-31",
+        "framework_sha": "aee9e94c21009bfc6c08f442eacde06f001c25f9"
+      },
+      {
+        "version": "1.17.0-dev.1.0",
+        "released": "2020-04-01",
+        "framework_sha": "d14a301e419af7f3eff7cc3a49bf936c75d2b2f0"
+      },
+      {
+        "version": "1.17.0-dev.3.0",
+        "released": "2020-04-02",
+        "framework_sha": "3a0d8377410ba85db3fb6a900e83dd211669bfc4"
+      },
+      {
+        "version": "1.17.0-dev.2.0",
+        "released": "2020-04-02",
+        "framework_sha": "a94e647d6b11dd8523a30130a2548d73a3eaff4f"
+      },
+      {
+        "version": "1.17.0-dev.4.0",
+        "released": "2020-04-03",
+        "framework_sha": "66eb92e6259687c6e3434e9c76842b0848775c6b"
+      },
+      {
+        "version": "1.18.0-dev.0.0",
+        "released": "2020-04-04",
+        "framework_sha": "14f3a36abaace74aeba3e40001ce905336fef415"
+      },
+      {
+        "version": "1.17.0-dev.5.0",
+        "released": "2020-04-04",
+        "framework_sha": "a8b3d1b74fac5251c61c8a898cf7544fd77ddd16"
+      },
+      {
+        "version": "1.18.0-dev.2.0",
+        "released": "2020-04-06",
+        "framework_sha": "727552e5caa10eee5808452dfbedfc9ef02178b8"
+      },
+      {
+        "version": "1.18.0-dev.1.0",
+        "released": "2020-04-06",
+        "framework_sha": "fef9d4d7cded15e4deff318c12cc2756c5c28bd6"
+      },
+      {
+        "version": "1.18.0-dev.4.0",
+        "released": "2020-04-07",
+        "framework_sha": "8f7327f83a3e094285163ae402c6f94190fc1674"
+      },
+      {
+        "version": "1.18.0-dev.3.0",
+        "released": "2020-04-07",
+        "framework_sha": "de1e5729165b61829a8fa7c41b449c6c7ad74c84"
+      },
+      {
+        "version": "1.18.0-dev.5.0",
+        "released": "2020-04-17",
+        "framework_sha": "7f56b53de4e5da2147c4d30d857a72c6f2e4f42f"
+      },
+      {
+        "version": "1.18.0-6.0.pre",
+        "released": "2020-04-21",
+        "framework_sha": "84c84fb24914e098667649be04614f6ea19d689c"
+      },
+      {
+        "version": "1.18.0-8.0.pre",
+        "released": "2020-04-24",
+        "framework_sha": "e0c63cd35e15e407a80dc44281cc392535fcce25"
+      },
+      {
+        "version": "1.18.0-7.0.pre",
+        "released": "2020-04-24",
+        "framework_sha": "d482163f59c49c32cb329beb2c3111c8e961d6b9"
+      },
+      {
+        "version": "1.18.0-9.0.pre",
+        "released": "2020-05-05",
+        "framework_sha": "445570ba1ae89eecaf9409fb5acde7e8b49ee975"
+      },
+      {
+        "version": "1.18.0-12.0.pre",
+        "released": "2020-05-06",
+        "framework_sha": "c2b7342ca470b11cfaad4fbfb094f73aa4c85320"
+      },
+      {
+        "version": "1.18.0-11.0.pre",
+        "released": "2020-05-06",
+        "framework_sha": "8568eda15b2527afd48622257cee3811e0d9da04"
+      },
+      {
+        "version": "1.18.0-10.0.pre",
+        "released": "2020-05-06",
+        "framework_sha": "9b7b9d795edfdd12c6ad8dd6495bed789c1bac05"
+      },
+      {
+        "version": "1.18.0-13.0.pre",
+        "released": "2020-05-07",
+        "framework_sha": "8fbfe1cfbf6ac5c5c23930556e1019385005bf81"
+      },
+      {
+        "version": "1.19.0-0.0.pre",
+        "released": "2020-05-08",
+        "framework_sha": "a849daf2836d653ef80e01f428531b3f787671cb"
+      },
+      {
+        "version": "1.19.0-1.0.pre",
+        "released": "2020-05-12",
+        "framework_sha": "456d80b9ddd74b4b5ca3b77bbfb70ab0e05d3fa8"
+      },
+      {
+        "version": "1.19.0-2.0.pre",
+        "released": "2020-06-01",
+        "framework_sha": "1d395c5e187370f2838bb043d3b438029b484bfc"
+      },
+      {
+        "version": "1.19.0-3.0.pre",
+        "released": "2020-06-02",
+        "framework_sha": "6135091de9f8f6befc2ec7f8835d28d43a21cd05"
+      },
+      {
+        "version": "1.19.0-4.0.pre",
+        "released": "2020-06-05",
+        "framework_sha": "2f7a59a8da20b3a7fbdfb7ac783dbca977a81653"
+      },
+      {
+        "version": "1.19.0-5.0.pre",
+        "released": "2020-06-09",
+        "framework_sha": "c264b70ec3b0cf9cd568eba5d65d0ce47fe57e1d"
+      },
+      {
+        "version": "1.20.0-0.0.pre",
+        "released": "2020-06-11",
+        "framework_sha": "d9653445f4d1257b5f5adb4b271d1316469e8cf1"
+      },
+      {
+        "version": "1.20.0-2.0.pre",
+        "released": "2020-07-01",
+        "framework_sha": "15a28159bcf4b3db13411cbc8d9b5fc51adc0a93"
+      },
+      {
+        "version": "1.20.0-3.0.pre",
+        "released": "2020-07-05",
+        "framework_sha": "0af027f80543302c65f99e1c1a2f3b3cbb8d04f3"
+      },
+      {
+        "version": "1.20.0-7.0.pre",
+        "released": "2020-07-09",
+        "framework_sha": "cc1af3afb62187cc37185afddc2d43bfef469db7"
+      },
+      {
+        "version": "1.20.0-7.1.pre",
+        "released": "2020-07-11",
+        "framework_sha": "7736f3bc90270dcb0480db2ccffbf1d13c28db85"
+      },
+      {
+        "version": "1.21.0-1.0.pre",
+        "released": "2020-07-17",
+        "framework_sha": "f25bd9c55c48c139524139b477d04b13e9f36b2c"
+      },
+      {
+        "version": "1.21.0-7.0.pre",
+        "released": "2020-08-07",
+        "framework_sha": "5a6dfa35caaf7bccb35488dc03677c150ebf2d97"
+      },
+      {
+        "version": "1.21.0-9.0.pre",
+        "released": "2020-08-13",
+        "framework_sha": "7c6f9dd2396dfe7deb6fd11edc12c10786490083"
+      },
+      {
+        "version": "1.22.0-1.0.pre",
+        "released": "2020-08-21",
+        "framework_sha": "ce40de69b7b4f89c66d19c8dbd3bd86ae30f1bc6"
+      },
+      {
+        "version": "1.22.0-9.0.pre",
+        "released": "2020-09-01",
+        "framework_sha": "7a4317519865146acda84702bba8775610598c0c"
+      },
+      {
+        "version": "1.22.0-12.0.pre",
+        "released": "2020-09-14",
+        "framework_sha": "a27c242b0eea731317cfec5bbdd9d35452ab3ecb"
+      },
+      {
+        "version": "1.23.0-4.0.pre",
+        "released": "2020-09-22",
+        "framework_sha": "83dd176777cd04bd2aaca050f6bb6cb9edbf56a1"
+      },
+      {
+        "version": "1.23.0-7.0.pre",
+        "released": "2020-10-01",
+        "framework_sha": "db6e2d8aa5bb9a0bd3e75fc7470268b5a56fd0b0"
+      },
+      {
+        "version": "1.23.0-13.0.pre",
+        "released": "2020-10-12",
+        "framework_sha": "4fa4f91d5cc65a5a98c7ccd91bb7d47814048a57"
+      },
+      {
+        "version": "1.23.0-18.0.pre",
+        "released": "2020-10-14",
+        "framework_sha": "37ebe3d82a9d5faeda7d3c1a6ad193030210a2cc"
+      },
+      {
+        "version": "1.24.0-1.0.pre",
+        "released": "2020-10-20",
+        "framework_sha": "12bea61c2902784fec73b7f5f2ff3415f873fead"
+      },
+      {
+        "version": "1.24.0-3.0.pre",
+        "released": "2020-10-22",
+        "framework_sha": "2783f8e2e14efec8b7e08f668dde61c40d128c24"
+      },
+      {
+        "version": "1.24.0-6.0.pre",
+        "released": "2020-10-30",
+        "framework_sha": "13896b3bd1858687a06b1639d60c877206170df8"
+      },
+      {
+        "version": "1.24.0-7.0.pre",
+        "released": "2020-11-05",
+        "framework_sha": "a0860f6e87ba4f9031bee4d6f56c08b970606bee"
+      },
+      {
+        "version": "1.24.0-10.1.pre",
+        "released": "2020-11-16",
+        "framework_sha": "405c85fe7ee688156028e87a623c9153d05591b2"
+      },
+      {
+        "version": "1.24.0-10.2.pre",
+        "released": "2020-11-18",
+        "framework_sha": "022b333a089afb81c471ec43d1f1f4f26305d876"
+      },
+      {
+        "version": "1.25.0-4.0.pre",
+        "released": "2020-12-02",
+        "framework_sha": "a7f5fd5360007518644597c60a1f2169eacccc2b"
+      },
+      {
+        "version": "1.25.0-8.0.pre",
+        "released": "2020-12-10",
+        "framework_sha": "a12e2a473a3214b4556ca589d2d9bd311ac7c6f1"
+      },
+      {
+        "version": "1.26.0-1.0.pre",
+        "released": "2020-12-16",
+        "framework_sha": "63062a64432cce03315d6b5196fda7912866eb37"
+      },
+      {
+        "version": "1.26.0-8.0.pre",
+        "released": "2021-01-13",
+        "framework_sha": "b9d06fffb2db263ab7021fc39adde7f2bf988a4a"
+      },
+      {
+        "version": "1.26.0-12.0.pre",
+        "released": "2021-01-21",
+        "framework_sha": "a706cd211240f27be3b61f06d70f958c7a4156fe"
+      },
+      {
+        "version": "1.26.0-17.1.pre",
+        "released": "2021-01-29",
+        "framework_sha": "c40e5294dda34d04cd222dfdf765f171e12e4a8d"
+      },
+      {
+        "version": "1.26.0-17.2.pre",
+        "released": "2021-02-04",
+        "framework_sha": "79b49b9e1057f90ebf797725233c6b311722de69"
+      },
+      {
+        "version": "1.27.0-1.0.pre",
+        "released": "2021-02-10",
+        "framework_sha": "68c96f100e42ab3dbf43e61e9e2fc875a2d50cb8"
+      },
+      {
+        "version": "1.27.0-4.0.pre",
+        "released": "2021-02-17",
+        "framework_sha": "f8cd24de95b16b5a1ce6ebc0716154271fbf6252"
+      },
+      {
+        "version": "1.27.0-8.0.pre",
+        "released": "2021-02-24",
+        "framework_sha": "b7d4806243a4e906bf061f79a0e314ba28111aa6"
+      },
+      {
+        "version": "2.1.0-10.0.pre",
+        "released": "2021-03-03",
+        "framework_sha": "cc9b78fc5c4a4d2d51316d9626523336230a89a9"
+      },
+      {
+        "version": "2.1.0-12.1.pre",
+        "released": "2021-03-13",
+        "framework_sha": "8264cb3e8a797eef39cbcd32bb56fd07790efb7f"
+      },
+      {
+        "version": "2.2.0-10.1.pre",
+        "released": "2021-04-15",
+        "framework_sha": "0941968447ea8058e56e1479f7e53147149b739e"
+      },
+      {
+        "version": "2.3.0-0.1.pre",
+        "released": "2021-04-27",
+        "framework_sha": "d72bfb8d073c6cf943a6637290dd3f8cdad11831"
+      },
+      {
+        "version": "2.3.0-1.0.pre",
+        "released": "2021-05-10",
+        "framework_sha": "d97f41caed971d4668ffe56699367ec3978db8f6"
+      },
+      {
+        "version": "2.3.0-12.1.pre",
+        "released": "2021-05-18",
+        "framework_sha": "f9c825981c2d18f5bd90ce9eebb45d3ad345a9c4"
+      },
+      {
+        "version": "2.3.0-16.0.pre",
+        "released": "2021-05-28",
+        "framework_sha": "fa5883b78e566877613ad1ccb48dd92075cb5c23"
+      },
+      {
+        "version": "2.3.0-24.0.pre",
+        "released": "2021-06-17",
+        "framework_sha": "2b9537c783063d0459b6282a218658a6955938d9"
+      },
+      {
+        "version": "2.4.0-0.0.pre",
+        "released": "2021-07-02",
+        "framework_sha": "96bbcd006fafade4ad7a4abde77cec32df6846ea"
+      },
+      {
+        "version": "2.4.0-4.0.pre",
+        "released": "2021-07-13",
+        "framework_sha": "cc00e7e6bc281f6af9a257e7e33868ef782b1cf7"
+      },
+      {
+        "version": "2.5.0-1.0.pre",
+        "released": "2021-07-27",
+        "framework_sha": "184e5871beea4a9b1cbd65dcc57118a7d97285f3"
+      },
+      {
+        "version": "2.5.0-5.0.pre",
+        "released": "2021-08-05",
+        "framework_sha": "0f465e5b2a3ed2431321b490a614c3d15089854c"
+      },
+      {
+        "version": "2.5.0-6.0.pre",
+        "released": "2021-08-12",
+        "framework_sha": "225a43d941ddd1753765fec3682011e9ddffb11d"
+      },
+      {
+        "version": "2.6.0-0.0.pre",
+        "released": "2021-08-26",
+        "framework_sha": "83b9e99cfbb8be5215514d7fa21191961b4a620d"
+      },
+      {
+        "version": "2.6.0-5.1.pre",
+        "released": "2021-09-13",
+        "framework_sha": "f2903d3da5710368d169577ae4682937fb4f7bc9"
+      },
+      {
+        "version": "2.6.0-11.0.pre",
+        "released": "2021-09-25",
+        "framework_sha": "4b330ddbedab445481cc73d50a4695b9154b4e4f"
+      },
+      {
+        "version": "2.9.0-0.1.pre",
+        "released": "2021-12-15",
+        "framework_sha": "8f1f9c10f04b8f106d78275e93ceead8ea837d8b"
+      },
+      {
+        "version": "2.10.0-0.1.pre",
+        "released": "2022-01-12",
+        "framework_sha": "628f0e3f3a01d6e6b5fd8c2d7b8f0d58883b6673"
+      },
+      {
+        "version": "2.10.0-0.2.pre",
+        "released": "2022-01-20",
+        "framework_sha": "73adb1406a9cff796e2203ad16fd285220a6ec97"
+      },
+      {
+        "version": "2.10.0-0.3.pre",
+        "released": "2022-01-26",
+        "framework_sha": "fdd0af78bbda27e1084ec859b27765d927cbe27e"
+      },
+      {
+        "version": "2.11.0-0.1.pre",
+        "released": "2022-02-16",
+        "framework_sha": "b101bfe32f634566e7cb2791a9efe19cf8828b15"
+      },
+      {
+        "version": "2.13.0-0.1.pre",
+        "released": "2022-04-13",
+        "framework_sha": "13a2fb10b838971ce211230f8ffdd094c14af02c"
+      }
+    ]
+  }
 }
