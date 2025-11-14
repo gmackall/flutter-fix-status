@@ -50,7 +50,7 @@ pnpm run deploy  # after setting CLOUDFLARE_API_TOKEN
 ```
 
 Set `BACKEND_BASE_URL` (optional):
-- Edit `public/index.html` `data-backend` attribute or set via environment injection.
+- Edit `index.html` `data-backend` attribute or set via environment injection.
 
 ## Environment Variables
 
@@ -93,6 +93,16 @@ MIT
 - Issue to multiple PR resolution
 - Diff stats summarization
 
+## Testing
+
+```bash
+# Run unit tests
+npm test
+
+# Run linter
+npm run lint
+```
+
 ## Contributing
 
-PRs welcome. Run `pnpm lint` before pushing.
+PRs welcome. Run `npm lint` and `npm test` before pushing.
