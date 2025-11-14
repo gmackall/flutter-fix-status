@@ -9,12 +9,33 @@
 <body>
   <h1>Flutter Fix Inclusion Checker</h1>
   <p>Enter a commit SHA, PR URL/number, or Issue URL/number.</p>
+
+  <details style="margin: 0 0 1rem 0;">
+    <summary>Settings (optional)</summary>
+    <div style="margin-top: .5rem; display: grid; gap: .5rem; max-width: 720px;">
+      <label>
+        GitHub token (fine‑grained, read‑only):
+        <input id="token-input" type="password" placeholder="github_pat_..." style="width:100%; padding:.5rem;">
+      </label>
+      <div style="display:flex; gap:.5rem;">
+        <button id="save-token" type="button">Save token</button>
+        <button id="clear-token" type="button">Clear token</button>
+        <span id="rate-status" style="margin-left:.5rem; font-size:.9rem; opacity:.8;"></span>
+      </div>
+      <small>
+        Tip: Adding a token raises your rate limit to 5,000 requests/hour. We only need read‑only access to public data.
+      </small>
+    </div>
+  </details>
+
   <form id="query-form">
     <input id="query" placeholder="e.g. 3f2a7bc, https://github.com/flutter/flutter/pull/12345" required>
     <button type="submit">Check</button>
   </form>
+
   <div id="status"></div>
   <section id="resolved"></section>
+
   <table id="results" aria-describedby="status">
     <thead>
       <tr>
@@ -28,9 +49,11 @@
     </thead>
     <tbody></tbody>
   </table>
+
   <footer>
-    <small>Data generated from Flutter archive. Client-side caching in localStorage.</small>
+    <small>Data from Flutter releases JSON. Client-side caching in localStorage. Provide a PAT for higher rate limits.</small>
   </footer>
+
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
