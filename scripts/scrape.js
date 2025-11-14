@@ -1,50 +1,62 @@
 import fs from 'fs';
 import fetch from 'node-fetch';
-import * as cheerio from 'cheerio';
 
-const url = 'https://docs.flutter.dev/install/archive';
-const html = await fetch(url).then(r => {
-  if (!r.ok) throw new Error(`Failed to fetch archive: ${r.status}`);
-  return r.text();
+// Use Flutter's official releases metadata instead of scraping HTML.
+// This JSON includes all releases with channel, hash, version, and release_date.
+const SOURCE_URL = 'https://storage.googleapis.com/flutter_infra_release/releases/releases_linux.json';
+
+const res = await fetch(SOURCE_URL, {
+  headers: {
+    // A UA helps some CDNs; optional but harmless.
+    'User-Agent': 'flutter-fix-status-scraper/1.0'
+  }
 });
+if (!res.ok) {
+  throw new Error(`Failed to fetch Flutter releases JSON: ${res.status} ${res.statusText}`);
+}
+const json = await res.json();
 
-const $ = cheerio.load(html);
-const channels = {};
+// Shape we want:
+// {
+//   generated_at: ISO,
+//   source: SOURCE_URL,
+//   channels: {
+//     stable: [{ version, released, framework_sha, archive_url? }],
+//     beta:   [...],
+//     dev:    [...],
+//     // main omitted (not a released channel)
+//   }
+// }
 
-$('table').each((_, table) => {
-  $(table).find('tbody tr').each((__, tr) => {
-    const tds = $(tr).find('td');
-    if (tds.length < 4) return;
-    const version = $(tds[0]).text().trim();
-    const channel = $(tds[1]).text().trim().toLowerCase();
-    const released = $(tds[2]).text().trim();
-    const frameworkSha = $(tds[3]).text().trim();
-    const archiveUrl = $(tds[0]).find('a').attr('href') || '';
-    if (!version || !channel || !frameworkSha) return;
-    channels[channel] ||= [];
-    channels[channel].push({
-      version,
-      released,
-      framework_sha: frameworkSha,
-      archive_url: archiveUrl
-    });
+const channels = { stable: [], beta: [], dev: [] };
+
+for (const r of json.releases || []) {
+  const ch = r.channel;
+  // Keep only known release channels
+  if (!(ch in channels)) continue;
+
+  const releasedISO = r.release_date ? new Date(r.release_date).toISOString() : '';
+  channels[ch].push({
+    version: r.version,
+    released: releasedISO.slice(0, 10), // YYYY-MM-DD
+    framework_sha: r.hash,
+    // Optionally build an archive URL; not strictly needed for this app.
+    // archive_url: `https://storage.googleapis.com/flutter_infra_release/releases/${ch}/${r.hash}/flutter_linux_${r.version}.tar.xz`
   });
-});
+}
 
+// Ensure chronological order: oldest -> newest for binary search
 for (const ch of Object.keys(channels)) {
   channels[ch].sort((a, b) => new Date(a.released) - new Date(b.released));
 }
 
 const out = {
   generated_at: new Date().toISOString(),
-  source: url,
+  source: SOURCE_URL,
   channels
 };
 
-// Write inside public so Pages can serve it
+// Write inside the published site so Pages serves it
 fs.mkdirSync('public/data', { recursive: true });
-const path = 'public/data/releases.json';
-const prior = fs.existsSync(path) ? JSON.parse(fs.readFileSync(path, 'utf8')) : null;
-const changed = JSON.stringify(prior) !== JSON.stringify(out);
-fs.writeFileSync(path, JSON.stringify(out, null, 2));
-console.log(changed ? 'Updated public/data/releases.json' : 'No changes');
+fs.writeFileSync('public/data/releases.json', JSON.stringify(out, null, 2));
+console.log(`Wrote ${Object.values(channels).reduce((n, arr) => n + arr.length, 0)} releases to public/data/releases.json`);

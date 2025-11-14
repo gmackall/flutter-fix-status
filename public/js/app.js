@@ -116,11 +116,19 @@ document.getElementById('query-form').addEventListener('submit', async (e) => {
     status.textContent = 'Resolved input. Loading releases…';
 
     const data = await loadReleases();
+
+    // GUARD: If channels are empty, surface that to the user and stop.
+    const channelEntries = Object.entries(data.channels || {});
+    if (!channelEntries.length) {
+      status.textContent = 'No release data found. Run “Update Flutter Releases” to generate public/data/releases.json.';
+      return;
+    }
+
     const resolvedDiv = document.getElementById('resolved');
     resolvedDiv.textContent = `Resolved commits: ${commits.length ? commits.join(', ') : '(none)'}`;
 
     status.textContent = 'Performing channel checks…';
-    for (const [channel, list] of Object.entries(data.channels || {})) {
+    for (const [channel, list] of channelEntries) {
       if (!Array.isArray(list) || !list.length) continue;
       const latestIndex = list.length - 1;
       const latest = list[latestIndex];
