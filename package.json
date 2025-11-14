@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "scrape": "node scripts/scrape.js",
-    "dev:static": "http-server public -c-1 -p 5173",
+    "dev:static": "http-server . -c-1 -p 5173",
     "lint": "eslint .",
+    "test": "node test/unit.test.js",
     "worker:dev": "wrangler dev worker/index.ts",
     "worker:deploy": "wrangler deploy worker/index.ts"
   },

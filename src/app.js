@@ -1,7 +1,7 @@
 import { classify, releasesAgo } from './utils.js';
 import { resolveCommits, isAncestor } from './api-client.js';
 
-const releasesUrl = '../data/releases.json';
+const releasesUrl = 'data/releases.json';
 let releasesData;
 
 async function loadReleases() {
@@ -88,7 +88,7 @@ document.getElementById('query-form').addEventListener('submit', async (e) => {
     }
 
     const row = document.createElement('tr');
-    const incHtml = included ? `<span class="success">✅</span>` : `<span class="danger">❌</span>`;
+    const incHtml = included ? '<span class="success">✅</span>' : '<span class="danger">❌</span>';
     const releasesAgoVal = included ? releasesAgo(latestIndex, firstFound.index) : '—';
     const cells = [
       channel,
