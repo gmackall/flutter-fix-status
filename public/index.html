@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-backend="">
+<head>
+  <meta charset="UTF-8">
+  <title>Flutter Fix Inclusion Checker</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Flutter Fix Inclusion Checker</h1>
+  <p>Enter a commit SHA, PR URL/number, or Issue URL/number.</p>
+  <form id="query-form">
+    <input id="query" placeholder="e.g. 3f2a7bc, https://github.com/flutter/flutter/pull/12345" required>
+    <button type="submit">Check</button>
+  </form>
+  <div id="status"></div>
+  <section id="resolved"></section>
+  <table id="results" aria-describedby="status">
+    <thead>
+      <tr>
+        <th>Channel</th>
+        <th>Latest Version</th>
+        <th>Included?</th>
+        <th>First Release</th>
+        <th>Date</th>
+        <th>Releases Ago</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <footer>
+    <small>Data generated from Flutter archive. Client-side caching in localStorage. Provide a PAT in settings for higher rate limits.</small>
+  </footer>
+  <script type="module" src="../src/app.js"></script>
+</body>
+</html>

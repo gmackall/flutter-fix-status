@@ -1,0 +1,23 @@
+{
+  "name": "flutter-fix-inclusion-checker",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape.js",
+    "dev:static": "http-server public -c-1 -p 5173",
+    "lint": "eslint .",
+    "worker:dev": "wrangler dev worker/index.ts",
+    "worker:deploy": "wrangler deploy worker/index.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "typescript": "^5.5.0",
+    "eslint": "^9.12.0",
+    "wrangler": "^3.75.0"
+  }
+}

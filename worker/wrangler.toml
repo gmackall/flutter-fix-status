@@ -1,0 +1,11 @@
+name = "flutter-fix-checker"
+main = "index.ts"
+compatibility_date = "2025-11-14"
+workers_dev = true
+
+[vars]
+# Optionally inject a public base URL if needed
+# BASE_URL = "https://<your-worker-subdomain>.workers.dev"
+
+[env.production]
+route = ""
