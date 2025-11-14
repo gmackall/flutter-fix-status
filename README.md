@@ -34,12 +34,12 @@ pnpm install
 node scripts/scrape.js
 
 # Serve static (simple dev)
-npx http-server public -c-1
+npx http-server . -c-1
 ```
 
 Deploy GitHub Pages:
 1. Push repository.
-2. Ensure `deploy-pages.yml` workflow runs or manually enable Pages (Settings → Pages → GitHub Actions).
+2. Ensure `scrape-and-deploy.yml` workflow runs or manually enable Pages (Settings → Pages → GitHub Actions).
 3. Confirm site at `https://<your-username>.github.io/<repo>/`.
 
 Configure backend (Cloudflare Worker):

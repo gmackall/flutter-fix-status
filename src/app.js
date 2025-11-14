@@ -1,7 +1,7 @@
 import { classify, releasesAgo } from './utils.js';
 import { resolveCommits, isAncestor } from './api-client.js';
 
-const releasesUrl = '../data/releases.json';
+const releasesUrl = 'data/releases.json';
 let releasesData;
 
 async function loadReleases() {
