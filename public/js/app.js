@@ -78,8 +78,11 @@ async function resolveCommits(classified, token) {
 }
 async function isAncestor(fixSha, releaseSha, token) {
   const data = await ghJson(`${GH_BASE}/compare/${fixSha}...${releaseSha}`, token);
-  if (!data) return false;
-  return data.status === 'behind' || data.status === 'identical';
+  if (!data) {
+    console.error(`Failed to compare ${fixSha}...${releaseSha}`);
+    return false;
+  }
+  return data.status === 'ahead' || data.status === 'identical';
 }
 async function findFirstRelease(commitSha, channelReleases, token) {
   if (!channelReleases?.length) return null;
