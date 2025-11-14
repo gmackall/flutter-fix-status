@@ -1,0 +1,52 @@
+{
+  "generated_at": "2024-11-14T00:00:00.000Z",
+  "source": "https://docs.flutter.dev/install/archive",
+  "channels": {
+    "stable": [
+      {
+        "version": "3.24.0",
+        "released": "2024-08-07",
+        "framework_sha": "80c2e84975bbd28ecf498d0910a6e34d7a4e5ff1",
+        "archive_url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.0-stable.tar.xz"
+      },
+      {
+        "version": "3.24.1",
+        "released": "2024-09-04",
+        "framework_sha": "5874a72aa7f6e1c1e1c5b638f3b0e3af1eb5f7e3",
+        "archive_url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.1-stable.tar.xz"
+      },
+      {
+        "version": "3.24.2",
+        "released": "2024-09-18",
+        "framework_sha": "4cf269e36de2573851eaee09e6e0f00d2f0de5f3",
+        "archive_url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.2-stable.tar.xz"
+      },
+      {
+        "version": "3.24.3",
+        "released": "2024-10-02",
+        "framework_sha": "2663184aa79047d0a33a14a3b607954f8fdd8730",
+        "archive_url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.3-stable.tar.xz"
+      },
+      {
+        "version": "3.24.4",
+        "released": "2024-10-23",
+        "framework_sha": "603104015dd60f9fc77fb8dcb2de2db64f82248d",
+        "archive_url": "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.4-stable.tar.xz"
+      }
+    ],
+    "beta": [
+      {
+        "version": "3.25.0-0.1.pre",
+        "released": "2024-10-23",
+        "framework_sha": "d6c0c923d46d7f23f2fbf8fe7a1b0f4fcb0e6a64",
+        "archive_url": "https://storage.googleapis.com/flutter_infra_release/releases/beta/linux/flutter_linux_3.25.0-0.1.pre-beta.tar.xz"
+      },
+      {
+        "version": "3.26.0-0.1.pre",
+        "released": "2024-11-06",
+        "framework_sha": "7a252d70d3a4c0c86dbdf6c245bf96b4ac7e36b7",
+        "archive_url": "https://storage.googleapis.com/flutter_infra_release/releases/beta/linux/flutter_linux_3.26.0-0.1.pre-beta.tar.xz"
+      }
+    ]
+  }
+}

@@ -88,7 +88,7 @@ document.getElementById('query-form').addEventListener('submit', async (e) => {
     }
 
     const row = document.createElement('tr');
-    const incHtml = included ? `<span class="success">✅</span>` : `<span class="danger">❌</span>`;
+    const incHtml = included ? '<span class="success">✅</span>' : '<span class="danger">❌</span>';
     const releasesAgoVal = included ? releasesAgo(latestIndex, firstFound.index) : '—';
     const cells = [
       channel,
