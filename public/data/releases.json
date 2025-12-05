@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-04T03:46:46.179Z",
+  "generated_at": "2025-12-05T03:45:26.188Z",
   "source": "https://storage.googleapis.com/flutter_infra_release/releases/releases_linux.json",
   "channels": {
     "stable": [
@@ -802,6 +802,11 @@
         "version": "3.38.3",
         "released": "2025-11-21",
         "framework_sha": "19074d12f7eaf6a8180cd4036a430c1d76de904e"
+      },
+      {
+        "version": "3.38.4",
+        "released": "2025-12-04",
+        "framework_sha": "66dd93f9a27ffe2a9bfc8297506ce066ff51265f"
       }
     ],
     "beta": [
