@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T07:32:56.662Z",
+  "generated_at": "2026-09-12T07:24:24.298Z",
   "source": "https://storage.googleapis.com/flutter_infra_release/releases/releases_linux.json",
   "channels": {
     "stable": [
@@ -957,6 +957,11 @@
         "version": "3.47.3",
         "released": "2026-09-09",
         "framework_sha": "e8113bf45620cbeb8aff64947ee4c93e16adb4cf"
+      },
+      {
+        "version": "3.47.4",
+        "released": "2026-09-11",
+        "framework_sha": "9584c6713b324636289d067944a46fd6b49df14b"
       }
     ],
     "beta": [
@@ -2114,6 +2119,11 @@
         "version": "3.48.0-0.4.pre",
         "released": "2026-09-03",
         "framework_sha": "e3005e3402d9cfa2043114c8bc53c59d12e9b98e"
+      },
+      {
+        "version": "3.48.0-0.5.pre",
+        "released": "2026-09-11",
+        "framework_sha": "c9306d5b2efe749ffd9450e838ba3399785a35e6"
       }
     ],
     "dev": [
